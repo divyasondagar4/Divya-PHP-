@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>form</title>
+</head>
+
+<body>
+
+
+<fieldset>
+
+
+
+<h1 align="center">Registration Form </h1>
+
+<form action="" method="post" enctype="multipart/form-data" style="padding:18px 500px;">
+	
+	First Name:
+  <input type="text" name="only_alpha" pattern="[a-zA-Z]+" title="add only alphabate" style="margin:5px;" required>
+  
+	<br>
+	Last Name:
+  <input type="text" name="only_alpha" pattern="[a-zA-Z]+" title="add only alphabate" style="margin:5px;" required>
+	<br>
+	User Name:
+	<input type="text" name="username" size="50" style="margin:5px;" >
+	<br>
+	Email
+	<input type="email" name="email" style="margin:5px;" >
+	<br>
+	Password
+  <input type="password" name="password" minlength="4" maxlength="8" style="margin:5px;" >
+	<br>
+	Date<input type="date" name="dob" style="margin:5px;" >
+	<br>
+	Time<input type="time" name="time" style="margin:5px;"  >
+	<br> 
+	color<input type="color" name="color"style="margin:5px;" >
+	<br>
+	Upload file/image :
+	<input type="file" name="file" style="margin:5px;"  >
+	<br>
+	<br>
+	Date/Time
+	<input type="datetime-local" name="datetime-local" style="margin:5px;" >
+	
+	<br>
+	Gender :
+	<br>
+	Male : <input type="radio" name="gender" value="Male" style="margin:5px;"  >
+	Female : <input type="radio" name="gender" value="Female"style="margin:5px;" >
+	
+	<br>
+	<br>
+	Laug :
+	<br>
+	Hindi : <input type="checkbox" name="lag[]" value="Hindi"style="margin:5px;" >
+	Gujarati : <input type="checkbox" name="lag[]" value="Gujarati"style="margin:5px;" >
+	English : <input type="checkbox" name="lag[]" value="English"style="margin:5px;" >
+	Other : <input type="checkbox" name="lag[]" value="Other"style="margin:5px;" >
+	
+	<br>
+	Month
+	<input type="month" name="month" style="margin:5px;"  >
+	
+	<br>
+	Mobile
+	<input type="number" name="only_number" pattern="[0-9]{10,11}" title="add only mobile number"style="margin:5px;" >
+ 
+	<br>
+	
+	<br>
+	week<input type="week" name="week" style="margin:5px;"  >
+	
+	<br>
+	country : 
+	<select name="country">
+		<option value="">----Select Country----</option>
+		<option value="India">India</option>
+		<option value="Japan">Japan</option>
+		<option value="USA">USA</option>
+	</select>
+	
+	<br>
+	Address :<textarea name="address" cols="20" rows="5"></textarea>
+	<br>
+	<br>
+	Image<input type="image" name="image"  style="margin:5px;" >
+	
+	
+	
+	<br>
+
+	<input type="submit" name="submit" value="Register" >
+	<input type="button" name="submit" value="Submit" >
+	<input type="button" name="submit" value="Submit" >
+	<input type="reset" name="reset" >
+	
+</form>
+
+</fieldset>
+
+
+
+</body>
+</html>
