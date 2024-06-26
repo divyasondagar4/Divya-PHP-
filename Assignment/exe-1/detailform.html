@@ -11,9 +11,14 @@
     
       .form-label
       {
-        color:brown;
+        color:white;
         font-weight:bold;
         font-size: 15px;
+      }
+      .form-control
+      {
+        background-color: rgba(240, 248, 255, 0.527);
+        color:wrgb(183, 155, 155)
       }
     </style>
 </head>
@@ -22,9 +27,9 @@
     <form action="" method="post">
       <h1 style="font-size: 30px; text-align: center;">Shopping Form</h1>
 
-      <div class="container " style="background-color:bisque;">
+      <div class="container " style="background-color:rgb(30, 95, 30);">
         <div class="mb-3 mt-3 ">
-            <h1 style="font-size: 30px;">Step 1 : Your Details</h1>
+            <h1 style="font-size: 30px; color: white;">Step 1 : Your Details</h1>
             <label for="name" class="form-label">Name:</label>
             <input type="name" class="form-control" id="name" placeholder="Enter first or last name" name="name" required>
         </div>
@@ -34,11 +39,11 @@
         </div>
         <div class="mb-3">
           <label for="phone number" class="form-label">Phone no:</label>
-          <input type="number" class="form-control" id="number" placeholder="Enter number" name="number"  required>
+          <input  type="number" class="form-control" id="number" placeholder="Enter number" name="number"  required>
         </div>
 
         <div class="mb-3 mt-3 ">
-          <h1 style="font-size: 30px;">Step 2 : Delivery Address</h1>
+          <h1 style="font-size: 30px; color: white;">Step 2 : Delivery Address</h1>
           <div class="form-group form-label">
             <label for="Address">Address:</label>
             <textarea class="form-control" rows="5" id="Address" required></textarea>
@@ -50,7 +55,7 @@
       </div>
             <div class="dropdown">
         <label for="country" class="form-label">country:</label>
-        <label for="sel1">Select list (select one):</label>
+        <label for="sel1" style=" color: white;">Select list (select one):</label>
       <select class="form-control" id="sel1">
         <option>Ahmedabad</option>
         <option>Surat</option>
@@ -60,7 +65,7 @@
         </div>
 
         <div class="mb-3 mt-3 ">
-          <h1 style="font-size: 30px;">Step 3 : Card Details</h1>
+          <h1 style="font-size: 30px; color: white;">Step 3 : Card Details</h1>
           <label for="Card types" class="form-label">Card types:</label>
 
           <label class="radio-inline" style="padding: 0px 50px;">
@@ -87,7 +92,7 @@
   <input type="nameoncard" class="form-control" id="nameoncard" placeholder="Exact name on your card" name="nameoncard" required>
 </div>
 
-        <button type="submit" class="btn btn-dark" style="margin-left:42%; padding: 0px 49px; font-size: 40px;">Buy It!</button>
+        <button type="submit" class="btn " style="margin-left:42%; padding: 0px 60px; margin-bottom: 10px; background-color: rgba(240, 248, 255, 0.527);  ;">Buy It!</button>
         </div>
       </div>
 
