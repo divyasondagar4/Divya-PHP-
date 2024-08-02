@@ -50,11 +50,12 @@
                                             <th>restaurant_id</th>
                                             <th>order_date</th>
                                             <th>total_price</th>
-											<th>Action</th>
+											
                                             <th>status</th>
                                             <th>pnr_no</th>
                                             <th>comments</th>
                                             <th>cart_id</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -64,15 +65,16 @@
                                             <td>3</td>
                                             <td>31-07-2024</td>
                                             <td>Rs. 280/-</td>
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
                                             <td>Pending</td>
                                             <td>4537253789</td>
                                             <td>Fast</td>
                                             <td>4</td>
+                                            <td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+					                 
                                         </tr>
                                         <tr>
                                             <td>1</td>
@@ -80,15 +82,16 @@
                                             <td>3</td>
                                             <td>31-07-2024</td>
                                             <td>Rs. 280/-</td>
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
                                             <td>Pending</td>
                                             <td>4537253789</td>
                                             <td>Fast</td>
                                             <td>4</td>
+                                            <td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+
                                         </tr>
                                         <tr>
                                             <td>1</td>
@@ -96,15 +99,50 @@
                                             <td>3</td>
                                             <td>31-07-2024</td>
                                             <td>Rs. 280/-</td>
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
                                             <td>Pending</td>
                                             <td>4537253789</td>
                                             <td>Fast</td>
                                             <td>4</td>
+                                            <td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+
+                                        </tr>   
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4</td>
+                                            <td>3</td>
+                                            <td>31-07-2024</td>
+                                            <td>Rs. 280/-</td>
+                                            <td>Pending</td>
+                                            <td>4537253789</td>
+                                            <td>Fast</td>
+                                            <td>4</td>
+                                            <td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+
+                                        </tr>   
+                                        <tr>
+                                            <td>1</td>
+                                            <td>4</td>
+                                            <td>3</td>
+                                            <td>31-07-2024</td>
+                                            <td>Rs. 280/-</td>
+                                            <td>Pending</td>
+                                            <td>4537253789</td>
+                                            <td>Fast</td>
+                                            <td>4</td>
+                                            <td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+
                                         </tr>                                       
                                     </tbody>
                                 </table>

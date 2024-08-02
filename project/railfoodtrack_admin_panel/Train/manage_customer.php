@@ -14,7 +14,7 @@
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
-      
+   
        
                  
          
@@ -28,7 +28,7 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-head-line">Manage Contact</h1>
+                        <h1 class="page-head-line">Manage Customer</h1>
 
                     </div>
                 </div>
@@ -46,23 +46,25 @@
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
                                         <tr>
-                                            <th>inquiry_id</th>
                                             <th>customer_id</th>
                                             <th>name</th>
                                             <th>email</th>
-                                            <th>comment</th>
-                                            <th>complaint</th>
+                                            <th>password</th>
+                                            <th>contact_number</th>
+                                            <th>status</th>
+                                            <th>city_id</th>
 											<th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>4</td>
                                             <td>Divya</td>
-                                            <td>kanha@gmail.com</td>
-                                            <td>Pizza not good</td>
-                                            <td></td>
+                                            <td>rkmali@gmail.com</td>
+                                            <td>Divya123</td>
+                                            <td>0123789456</td>
+                                            <td>Active</td>
+                                            <td>1</td>
 											<td>
 												<a href="#" class="btn btn-primary">Edit</a>
 												<a href="#" class="btn btn-danger">Delete</a>
@@ -71,11 +73,12 @@
                                         </tr>
                                         <tr>
                                             <td>1</td>
-                                            <td>4</td>
                                             <td>Divya</td>
-                                            <td>sainath@gmail.com</td>
-                                            <td>Pizza not good</td>
-                                            <td></td>
+                                            <td>sd@gmail.com</td>
+                                            <td>Divya123</td>
+                                            <td>0123789456</td>
+                                            <td>Active</td>
+                                            <td>2</td>
 											<td>
 												<a href="#" class="btn btn-primary">Edit</a>
 												<a href="#" class="btn btn-danger">Delete</a>
@@ -84,17 +87,64 @@
                                         </tr>
                                         <tr>
                                             <td>1</td>
-                                            <td>4</td>
                                             <td>Divya</td>
-                                            <td>sainath@gmail.com</td>
-                                            <td>Pizza not good</td>
-                                            <td></td>
+                                            <td>sd@gmail.com</td>
+                                            <td>Divya123</td>
+                                            <td>0123789456</td>
+                                            <td>Active</td>
+                                            <td>3</td>
 											<td>
 												<a href="#" class="btn btn-primary">Edit</a>
 												<a href="#" class="btn btn-danger">Delete</a>
 												<a href="#" class="btn btn-info">Status</a>
 											</td>
                                         </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Divya</td>
+                                            <td>sd@gmail.com</td>
+                                            <td>Divya123</td>
+                                            <td>0123789456</td>
+                                            <td>Active</td>
+                                            <td>3</td>
+											<td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Divya</td>
+                                            <td>sd@gmail.com</td>
+                                            <td>Divya123</td>
+                                            <td>0123789456</td>
+                                            <td>Active</td>
+                                            <td>3</td>
+											<td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+                                        </tr>
+                                        
+
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Divya</td>
+                                            <td>sd@gmail.com</td>
+                                            <td>Divya123</td>
+                                            <td>0123789456</td>
+                                            <td>Active</td>
+                                            <td>3</td>
+											<td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+                                        </tr>
+                                        
+
                                        
                                     </tbody>
                                 </table>

@@ -14,7 +14,7 @@
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
-    
+  
                  
          
      
@@ -27,7 +27,7 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-head-line">Manage Shop</h1>
+                        <h1 class="page-head-line">Manage City</h1>
 
                     </div>
                 </div>
@@ -38,33 +38,65 @@
                   <!--   Kitchen Sink -->
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Manage Shop
+                            Manage City
                         </div>
                         <div class="panel-body">
                             <div class="table-responsive">
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
                                         <tr>
-                                            <th>shop_id</th>
-                                            <th>shop_name</th>
-                                            <th>address</th>
-                                            <th>email</th>
+                                            <th>city_id</th>
+                                            <th>city_name</th>
 											<th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>Kanha Restuarant</td>
-                                            <td>Krishnanagar</td>
-                                            <td>kanha@gmail.com</td>
+                                            <td>Maninagar</td>
 											<td>
 												<a href="#" class="btn btn-primary">Edit</a>
 												<a href="#" class="btn btn-danger">Delete</a>
 												<a href="#" class="btn btn-info">Status</a>
 											</td>
                                         </tr>
-                                       
+                                      
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Kalupur</td>
+											<td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Maninagar</td>
+											<td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Naroda Gam</td>
+											<td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Krisnahnagar</td>
+											<td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>

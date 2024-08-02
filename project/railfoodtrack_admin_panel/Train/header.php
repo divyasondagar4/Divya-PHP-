@@ -14,7 +14,7 @@
             <div style="color: black;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Last access :  &nbsp; <a href="#" class="btn btn-danger square-btn-adjust">Logout</a>
+font-size: 16px;"> Last access :  &nbsp; <a href="login.php" class="btn btn-danger square-btn-adjust">Logout</a>
             </div>
         </nav>
 
@@ -22,7 +22,7 @@ font-size: 16px;"> Last access :  &nbsp; <a href="#" class="btn btn-danger squar
             <div class="sidebar-collapse">
                 <ul class="nav" id="main-menu">
                     <li class="text-center">
-                        <img src="assets/img/find_user.png" class="user-image img-responsive" />
+                        <img src="assets/img/admin_img.webp" class="user-image img-responsive" />
                     </li>
                     <li class="text-center" style="color:black; background-color:white; margin:10px;">
                         <h4>Divya Sondagar </h>

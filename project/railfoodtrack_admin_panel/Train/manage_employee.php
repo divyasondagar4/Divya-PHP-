@@ -14,7 +14,9 @@
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
-  
+   
+                 
+         
      
 <?php
   include_once('header.php');
@@ -25,7 +27,7 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="page-head-line">Manage Food</h1>
+                        <h1 class="page-head-line">Manage Employee</h1>
 
                     </div>
                 </div>
@@ -43,20 +45,21 @@
                                 <table class="table table-striped table-bordered table-hover">
                                     <thead>
                                         <tr>
-                                            <th>food_id</th>
+                                            <th>employee_id</th>
                                             <th>name</th>
-                                            <th>price</th>
-                                            <th>Image</th>
-                                            <th>Action</th>
+                                            <th>email</th>
+                                            <th>password</th>
+                                            <th>Staus</th>
+											<th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td>1</td>
-                                            <td>Pizza</td>
-                                            <td>Rs. 329/-</td>
-                                            <td><img src="./image/pizza1.jfif" alt=""style=" height:50px; width:70px; align:center;"></td>
-                                           
+                                            <td>Divya</td>
+                                            <td>sd@gmail.com</td>
+                                            <td>Divya123</td>
+                                            <td>Active</td>
 											<td>
 												<a href="#" class="btn btn-primary">Edit</a>
 												<a href="#" class="btn btn-danger">Delete</a>
@@ -64,11 +67,11 @@
 											</td>
                                         </tr>
                                         <tr>
-                                            <td>2</td>
-                                            <td>Pizza</td>
-                                            <td>Rs. 349/-</td>
-                                            <td><img src="./image/pizza1.jfif" alt=""style=" height:50px; width:70px; align:center;"></td>
-                                           
+                                            <td>1</td>
+                                            <td>Divya</td>
+                                            <td>sd@gmail.com</td>
+                                            <td>Divya123</td>
+                                            <td>Active</td>
 											<td>
 												<a href="#" class="btn btn-primary">Edit</a>
 												<a href="#" class="btn btn-danger">Delete</a>
@@ -76,11 +79,35 @@
 											</td>
                                         </tr>
                                         <tr>
-                                            <td>3</td>
-                                            <td>Pizza</td>
-                                            <td>Rs. 399/-</td>
-                                            <td><img src="./image/pizza1.jfif" alt=""style=" height:50px; width:70px; align:center;"></td>
-                                           
+                                            <td>1</td>
+                                            <td>Divya</td>
+                                            <td>sd@gmail.com</td>
+                                            <td>Divya123</td>
+                                            <td>Active</td>
+											<td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Divya</td>
+                                            <td>sd@gmail.com</td>
+                                            <td>Divya123</td>
+                                            <td>Active</td>
+											<td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+                                        </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Divya</td>
+                                            <td>sd@gmail.com</td>
+                                            <td>Divya123</td>
+                                            <td>Active</td>
 											<td>
 												<a href="#" class="btn btn-primary">Edit</a>
 												<a href="#" class="btn btn-danger">Delete</a>
