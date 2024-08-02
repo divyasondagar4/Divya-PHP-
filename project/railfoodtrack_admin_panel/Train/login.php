@@ -14,11 +14,11 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
 </head>
-<body style="background-color: #E2E2E2;">
+<body style="background-color:white;">
     <div class="container">
         <div class="row text-center " style="padding-top:100px;">
             <div class="col-md-12">
-                <h1 style="color:deepskyblue">Food Track</h1>
+                <h1 style="color:orange; background-color:navy; border-radius:15px;"></i>Food-Track</h1>
             </div>
         </div>
          <div class="row ">
@@ -28,7 +28,7 @@
                             <div class="panel-body">
                                 <form role="form">
                                     <hr />
-                                    <h5>Enter Details to Login</h5>
+                                    <h3 style="text-align:center; color:navy;">Enter Details to Login</h3>
                                        <br />
                                      <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
