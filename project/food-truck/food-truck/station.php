@@ -33,9 +33,57 @@
 
     <!-- -----form css------ -->
     <link href="css/order.css" rel="stylesheet">
+
+    <style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0; /* Light blue background */
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  /* background-color: #ff9900; Orange header */
+  color: #f0f0f0 ;
+  background: linear-gradient(135deg, #ff6f61, #ffbc67);
+}
+.date-join p
+{
+    color:black;
+    font-size: 20px;
+}
+
+section {
+  text-align: center;
+  padding: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: black;
+  font-size: 20px;
+}
+
+select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+@media screen and (max-width: 600px) {
+  /* Styles for small screens */
+  header, section {
+    padding: 10px;
+  }
+}
+
+    </style>
 </head>
 
 <body>
+
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -43,6 +91,7 @@
                 <span class="sr-only">Loading...</span>
             </div>
         </div>
+
         <!-- Spinner End -->
 
 
@@ -54,12 +103,12 @@
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Order</h1>
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Select Station</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Order</li>
+                            <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
+                            <li class="breadcrumb-item text-white active" aria-current="page">Station</li>
                         </ol>
                     </nav>
                 </div>
@@ -68,42 +117,45 @@
         <!-- Navbar & Hero End -->
 
 
-        <!-- Order Start -->
-        <div class="container">
+        <!--station Start -->  <header>
+    <h1>Order Food in Ahmedabad (12345) Train</h1>
+<div class="date-join">
 
-            <div class="both-forms">
-                <div class="ORDER-form">
-                    <h2>ORDER VIA TRAIN NO</h2>
-                    <form>
-                        <div class="input-group">
-                            <label for="enter-train-no"> Train no</label>
-                            <input type="number" id="enter-train-no" name="enter-train-no" placeholder="Enter Train No " required>
-                        </div>
-                        <div class="input-group">
-                            <label for="date">Date</label>
-                            <input type="date" id="date" name="date" required>
-                        </div>
-                        <a href="station.php" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">order Now</a>
+    <p>Journey Date: 03-Aug-2024</p>
+</div>
 
-                    </form>
-                </div>
-          
+  
+  <section>
 
-            <div class="ORDER-form2" style="height:350px;   width: 530px;">
-                <h2>ORDER VIA PNR NO</h2>
-                <form>
-                    <div class="input-group">
-                        <label for="enter-pnr">Enter PNR no</label>
-                        <input type="number" id="enter-pnr" name="enter-pnr" placeholder="Enter 10 Digit PNR " required>
-                    </div>
+    <!-- <div class="box" style="margin:40px; background-color:white; color:black; font-size:30px;">select your bording station</div>
+    <label for="boardingStation" >Boarding Station:</label>
+    <select id="boardingStation">
+        <option>1 station dbgfbzgbhgftrshbg</option>
+        <option>2 station</option>
 
-                    <a href="station.php" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">order Now</a>
+        <option>3 station</option>
+        <option>4 station</option>
 
-                </form>
-            </div>
-        </div>
-    </div>
-    <!-- Order End -->
+      </select> -->
+     <form class="form-inline">
+  <label class="my-1 mr-2" for="inlineFormCustomSelectPref">SELECT YOUR BORDING STATION:  </label>
+  <div class="dropdown">
+  <button class="btn btn-success text-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="width:40%">
+    choose station
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="text-align:center; width:300px; margin:0px 500px;">
+    <a class="dropdown-item" href="restaurants.php">ahmedanad express</a>
+    <a class="dropdown-item" href="restaurants.php">rajkot express</a>
+    <a class="dropdown-item" href="restaurants.php">Surat express</a>
+  </div>
+</div>
+  
+</form>
+
+  </section>
+  </header>
+      
+    <!--station End -->
 
 
         <!-- Footer Start -->

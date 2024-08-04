@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
   
 }
 
@@ -25,7 +26,7 @@
 }
 
 .ORDER-form2 {
-    width: 500px;
+  
   margin:30px;
   padding:49px;
   background-color: #ffede395;
@@ -92,21 +93,36 @@ button:hover {
         transform: translateY(0);
     }
 }
-@media only screen and (max-width: 667px ) and (min-width: 59px){
-    .both-forms
+@media only screen and (max-width: 710px ) and (min-width: 59px){
+    .container
     {
         display: inline;
         background: linear-gradient(135deg, #ff6f61, #ffbc67);
 
     }
+  
     .ORDER-form {
         width: 400px;
-    
+        background: linear-gradient(135deg, #ff6f61, #ffbc67);
+        height:350px;
+
     }
     
     .ORDER-form2 {
-        width: 400px;
+        width: 450px;
+        background: linear-gradient(135deg, #ff6f61, #ffbc67);
+        height:500px;
+
      
     }
     
   }
+  /* @media only screen and  (min-width: 500px){
+    .container
+    {
+        display: inline;
+        background: linear-gradient(135deg, #ff6f61, #ffbc67);
+
+    }
+    
+  } */
