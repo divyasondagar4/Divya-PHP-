@@ -32,7 +32,7 @@
     <link href="css/style.css" rel="stylesheet">
 
     <!-- -----form css------ -->
-    <link href="css/order.css" rel="stylesheet">
+    <!-- <link href="css/order.css" rel="stylesheet"> -->
     <link href="css/foodmenu.css" rel="stylesheet">
 
     <!-- food cards cdn -->
@@ -63,14 +63,14 @@
             include_once('header.php');
             ?>
 
-            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+<div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 tect-black mb-3 animated slideInDown">Select Food</h1>
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Select Food</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
                             <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
-                            <li class="breadcrumb-item tect-black active" aria-current="page"> food menu</li>
+                            <li class="breadcrumb-item text-white active" aria-current="page"> food</li>
                         </ol>
                     </nav>
                 </div>
@@ -164,16 +164,18 @@
                                             <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile point</a></li>
                                             <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
                                         </ul> -->
-
+                                       
 
 
                                 </div>
+                             
                             </div>
 
-                            <button type="button" class="btn btn-warning mt-4 tect-black"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+                            <a href="cart.php" style="width:100%;"> <button type="button" class="btn btn-warning mt-4 text-black" style="width:100%;"><i class="icon-cart-add mr-2"></i> 
+                            Add to cart</button></a>
 
-                            <button type="button" class="btn btn-info mt-4 tect-black"><i class="icon-cart-add mr-2"></i> view cart</button>
-
+                            <a href="cart.php" style="width:100%;"> <button type="button" class="btn btn-info mt-4 text-black" style="width:100%;"><i class="icon-cart-add mr-2"></i> 
+                           View cart</button></a>
                         </div>
                     
                 </div>
@@ -371,8 +373,8 @@
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-warning mt-4 tect-black"><i class="icon-cart-add mr-2"></i> Add to cart</button>
-                <button type="button" class="btn btn-info mt-4 tect-black"><i class="icon-cart-add mr-2"></i> view cart</button>
+                <button type="button" class="btn btn-warning mt-4 tect-black"><i class="icon-cart-add mr-2"></i>  <a href="cart.php" style="color:black;">Add to cart</button>
+                <button type="button" class="btn btn-info mt-4 tect-black"> <a href="foodmenu.php" style="color:black;"> view cart</button>
 
 
             </div>

@@ -117,7 +117,7 @@
                 </div>
                 <div class="d-flex justify-content-between p-2 mb-2 bg-primary">
                   <h5 class="fw-bold mb-0">Total:</h5>
-                  <h5 class="fw-bold mb-0">2261$</h5>
+                  <h5 class="fw-bold mb-0">95rs</h5>
                 </div>
 
               </div>

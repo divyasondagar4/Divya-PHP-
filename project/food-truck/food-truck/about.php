@@ -45,9 +45,9 @@
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
-        <?php
-           include_once('header.php');
-           ?>
+            <?php
+            include_once('header.php');
+            ?>
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container text-center my-5 pt-5 pb-4">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">About Us</h1>
@@ -86,9 +86,29 @@
                     </div>
                     <div class="col-lg-6">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
-                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Restoran</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Food Track</h1>
+                        <p class="mb-4">We deliver delicious food right to your train seat! Simply enter your PNR or train number and choose the station where you want your food delivered. Enjoy a wide variety of cuisines and meals without leaving your comfort zone.</p>
+                        <p class="mb-4">Tired of bland train food? Craving your favorite meal on the go? We're here to change your train journey!
+
+                            Order delicious food online and have it delivered directly to your train seat. Simply enter your PNR or train number, choose your station, and select from a variety of cuisines.
+
+                            Enjoy these benefits:
+
+                          <p>  Convenience: No more searching for food at stations.</p>
+                           <p> Variety: Choose from a wide range of restaurants and dishes.</p>
+                           <p> Hygiene: We prioritize food safety and hygiene.</p>
+                          <p>  Freshness: Your meal is prepared and packed fresh for your journey.</p>
+                           <p> Time-saving: Relax and enjoy your meal while traveling.</p>
+                          <p>  We bring your favorite flavors right to you, making your train journey more enjoyable.</p>
+
+
+
+
+
+
+
+
+                        </p>
                         <div class="row g-4 mb-4">
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center border-start border-5 border-primary px-3">
@@ -99,7 +119,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <!-- <div class="col-sm-6">
                                 <div class="d-flex align-items-center border-start border-5 border-primary px-3">
                                     <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
                                     <div class="ps-4">
@@ -107,9 +127,9 @@
                                         <h6 class="text-uppercase mb-0">Master Chefs</h6>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                        <!-- <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a> -->
                     </div>
                 </div>
             </div>
@@ -118,7 +138,7 @@
 
 
         <!-- Team Start -->
-        <div class="container-xxl pt-5 pb-3">
+        <!-- <div class="container-xxl pt-5 pb-3">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
                     <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
@@ -183,9 +203,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Team End -->
-        
+
 
         <!-- Footer Start -->
         <?php

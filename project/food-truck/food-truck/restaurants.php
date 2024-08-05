@@ -112,11 +112,12 @@
                                 <div class="mt-1 mb-1 spec-1"><span>veg</span><span class="dot"></span><span>non-veg</span><span class="dot"></span><span>Casual<br></span></div>
                                 <p class="text-justify text-truncate para mb-0">North Indian, Chinese, South I...
                                     Min. Order: ₹50<br><br></p>
-                                    <a href="#">google profile</a>
+                                <a href="#">google profile</a>
                             </div>
                             <div class="align-items-center align-content-center col-md-3 border-left mt-1">
 
-                            <button class="btn btn-outline-primary btn-sm mt-2" type="button">  <a href="foodmenu.php" style="color:black;">Food menu</a></button>                                                       </div>
+                                <button class="btn btn-outline-primary btn-sm mt-2" type="button"> <a href="foodmenu.php" style="color:black;">Food menu</a></button>
+                            </div>
                         </div>
 
                         <div class="row p-2 bg-white border rounded">
@@ -135,36 +136,12 @@
                                 <div class="mt-1 mb-1 spec-1"><span>veg</span><span class="dot"></span><span>non-veg</span><span class="dot"></span><span>Casual<br></span></div>
                                 <p class="text-justify text-truncate para mb-0">North Indian, Chinese, South I...
                                     Min. Order: ₹50<br><br></p>
-                                    <a href="#">google profile</a>
+                                <a href="#">google profile</a>
                             </div>
                             <div class="align-items-center align-content-center col-md-3 border-left mt-1">
 
-                            <button class="btn btn-outline-primary btn-sm mt-2" type="button">  <a href="foodmenu.php" style="color:black;">Food menu</a></button>                                                       </div>
-                        </div>
-
-
-                        <div class="row p-2 bg-white border rounded">
-                            <div class="col-md-3 mt-1">
-                                <img class="img-fluid img-responsive rounded product-image" src="img/resatau.jpg">
+                                <button class="btn btn-outline-primary btn-sm mt-2" type="button"> <a href="foodmenu.php" style="color:black;">Food menu</a></button>
                             </div>
-                            <div class="col-md-6 mt-1">
-                                <h5>R&R restaurant</h5>
-                                <div class="d-flex flex-row">
-                                    <div class="ratings mr-2"><span>Rating : </span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                                </div>
-                                <div class="d-flex flex-row">
-                                    <div class="ratings mr-2"><span>station : </span><span>ahmedabad</span></div>
-                                </div>
-
-                                <div class="mt-1 mb-1 spec-1"><span>veg</span><span class="dot"></span><span>non-veg</span><span class="dot"></span><span>Casual<br></span></div>
-                                <p class="text-justify text-truncate para mb-0">North Indian, Chinese, South I...
-                                    Min. Order: ₹50<br><br></p>
-                                    <a href="#">google profile</a>
-                            </div>
-                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-
-
-                            <button class="btn btn-outline-primary btn-sm mt-2" type="button">  <a href="foodmenu.php" style="color:black;">Food menu</a></button>                                                       </div>
                         </div>
 
 
@@ -184,12 +161,39 @@
                                 <div class="mt-1 mb-1 spec-1"><span>veg</span><span class="dot"></span><span>non-veg</span><span class="dot"></span><span>Casual<br></span></div>
                                 <p class="text-justify text-truncate para mb-0">North Indian, Chinese, South I...
                                     Min. Order: ₹50<br><br></p>
-                                    <a href="#">google profile</a>
+                                <a href="#">google profile</a>
                             </div>
                             <div class="align-items-center align-content-center col-md-3 border-left mt-1">
 
 
-                            <button class="btn btn-outline-primary btn-sm mt-2" type="button">  <a href="foodmenu.php" style="color:black;">Food menu</a></button>                                                       </div>
+                                <button class="btn btn-outline-primary btn-sm mt-2" type="button"> <a href="foodmenu.php" style="color:black;">Food menu</a></button>
+                            </div>
+                        </div>
+
+
+                        <div class="row p-2 bg-white border rounded">
+                            <div class="col-md-3 mt-1">
+                                <img class="img-fluid img-responsive rounded product-image" src="img/resatau.jpg">
+                            </div>
+                            <div class="col-md-6 mt-1">
+                                <h5>R&R restaurant</h5>
+                                <div class="d-flex flex-row">
+                                    <div class="ratings mr-2"><span>Rating : </span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                                </div>
+                                <div class="d-flex flex-row">
+                                    <div class="ratings mr-2"><span>station : </span><span>ahmedabad</span></div>
+                                </div>
+
+                                <div class="mt-1 mb-1 spec-1"><span>veg</span><span class="dot"></span><span>non-veg</span><span class="dot"></span><span>Casual<br></span></div>
+                                <p class="text-justify text-truncate para mb-0">North Indian, Chinese, South I...
+                                    Min. Order: ₹50<br><br></p>
+                                <a href="#">google profile</a>
+                            </div>
+                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
+
+
+                                <button class="btn btn-outline-primary btn-sm mt-2" type="button"> <a href="foodmenu.php" style="color:black;">Food menu</a></button>
+                            </div>
                         </div>
 
 
@@ -199,13 +203,14 @@
             </div>
 
         </div>
-<!-- 2 restaurant -->
+        <!-- 2 restaurant -->
 
 
-<div class="main-restaurant">
-            <h1>  Gandhinagar Restaurants</h1>
+        <div class="main-restaurant">
+            <h1> Gandhinagar Restaurants</h1>
             <div class="container mt-5 mb-5">
-                <div class="d-flex justify-content-center row">
+                <div class="d-flex justify-content-center
+                 row">
                     <div class="col-md-10">
                         <div class="row p-2 bg-white border rounded">
                             <div class="col-md-3 mt-1">
@@ -227,71 +232,57 @@
                             <div class="align-items-center align-content-center col-md-3 border-left mt-1">
 
 
-                            <button class="btn btn-outline-primary btn-sm mt-2" type="button">  <a href="foodmenu.php" style="color:black;">Food menu</a></button>                           
+                                <button class="btn btn-outline-primary btn-sm mt-2" type="button"> <a href="foodmenu.php" style="color:black;">Food menu</a></button>
+                            </div>
+
                         </div>
-
-                        <div class="row p-2 bg-white border rounded">
-                            <div class="col-md-3 mt-1">
-                                <img class="img-fluid img-responsive rounded product-image" src="img/resatau.jpg">
-                            </div>
-                            <div class="col-md-6 mt-1">
-                                <h5>R&R restaurant</h5>
-                                <div class="d-flex flex-row">
-                                    <div class="ratings mr-2"><span>Rating : </span><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
-                                </div>
-                                <div class="d-flex flex-row">
-                                    <div class="ratings mr-2"><span>station : </span><span>ahmedabad</span></div>
-                                </div>
-
-                                <div class="mt-1 mb-1 spec-1"><span>veg</span><span class="dot"></span><span>non-veg</span><span class="dot"></span><span>Casual<br></span></div>
-                                <p class="text-justify text-truncate para mb-0">North Indian, Chinese, South I...
-                                    Min. Order: ₹50<br><br></p>
-                                    <a href="#">google profile</a>
-                            </div>
-                            <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-
                         
-                            <button class="btn btn-outline-primary btn-sm mt-2" type="button">  <a href="foodmenu.php" style="color:black;">Food menu</a></button>                                                       </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
                         </div>
-    </div>
-    
 
 
 
 
-    </form>
 
-    </section>
-    </header>
+                        </form>
 
-    <!--station End -->
+                        </section>
+                        </header>
+
+                        <!--station End -->
 
 
-    <!-- Footer Start -->
-    <?php
-    include_once('footer.php');
-    ?>
-    <!-- Footer End -->
+                        <!-- Footer Start -->
+                       <?php
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
+                                include_once('footer.php')
+                       
+                    ?>
+                        <!-- Footer End -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="js/restaurant.js"></script> -->
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
-    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+                        <!-- Back to Top -->
+                        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+                    </div>
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+                    <!-- JavaScript Libraries -->
+                    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+                    <!-- <script src="js/restaurant.js"></script> -->
+                    <script src="lib/wow/wow.min.js"></script>
+                    <script src="lib/easing/easing.min.js"></script>
+                    <script src="lib/waypoints/waypoints.min.js"></script>
+                    <script src="lib/counterup/counterup.min.js"></script>
+                    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+                    <script src="lib/tempusdominus/js/moment.min.js"></script>
+                    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+                    <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+                    <!-- Template Javascript -->
+                    <script src="js/main.js"></script>
 </body>
 
 </html>

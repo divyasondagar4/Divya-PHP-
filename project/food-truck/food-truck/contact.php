@@ -55,7 +55,7 @@
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> -->
                             <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
                         </ol>
                     </nav>
@@ -75,7 +75,7 @@
                 <div class="row g-4">
                     <div class="col-12">
                         <div class="row gy-4">
-                            <div class="col-md-4">
+                            <!-- <div class="col-md-4">
                                 <h5 class="section-title ff-secondary fw-normal text-start text-primary">Booking</h5>
                                 <p><i class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
                             </div>
@@ -86,7 +86,7 @@
                             <div class="col-md-4">
                                 <h5 class="section-title ff-secondary fw-normal text-start text-primary">Technical</h5>
                                 <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">

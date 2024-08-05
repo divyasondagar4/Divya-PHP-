@@ -150,6 +150,8 @@ select {
   </div>
 </div>
   
+</div>
+
 </form>
 
   </section>

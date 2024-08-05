@@ -9,7 +9,7 @@
   display:flex;
    font-family: 'Arial', sans-serif;
     height: 100vh;
-    background: linear-gradient(135deg, #ff6f61, #ffbc67);
+    /* background: linear-gradient(135deg, #ff6f61, #ffbc67); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -97,20 +97,20 @@ button:hover {
     .container
     {
         display: inline;
-        background: linear-gradient(135deg, #ff6f61, #ffbc67);
+        /* background: linear-gradient(135deg, #ff6f61, #ffbc67); */
 
     }
   
     .ORDER-form {
         width: 400px;
-        background: linear-gradient(135deg, #ff6f61, #ffbc67);
+        /* background: linear-gradient(135deg, #ff6f61, #ffbc67); */
         height:350px;
 
     }
     
     .ORDER-form2 {
         width: 450px;
-        background: linear-gradient(135deg, #ff6f61, #ffbc67);
+        /* background: linear-gradient(135deg, #ff6f61, #ffbc67); */
         height:500px;
 
      
