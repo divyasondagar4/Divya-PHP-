@@ -34,4 +34,20 @@ class xyz extends abc
 echo abc::$my_static;  
  
  
+<?php
+
+class ParentClass {
+    public function __construct() {
+        echo "Parent constructor called.\n";
+    }
+}
+
+class ChildClass extends ParentClass {
+    public function __construct() {
+        parent::__construct(); // Explicitly call parent constructor
+        echo "Child constructor called.\n";
+    }
+}
+
+$childObj = new ChildClass();
 ?>
