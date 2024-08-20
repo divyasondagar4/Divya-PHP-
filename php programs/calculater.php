@@ -2,6 +2,12 @@
 <head>
 <title></title>
 </head>
+<style>
+   p{
+    text-align: center;
+
+    }
+</style>
 <body>
 <form action="" method="post" enctype="multipart/form-data">
 	
@@ -74,7 +80,7 @@ if(isset($_REQUEST['total']))
             $grade = "D";
         }
      else {
-        $grade = "E";
+        $grade = "fail ";
     }
 
 	echo "<br> Your grade is : ". $grade;
@@ -82,24 +88,4 @@ if(isset($_REQUEST['total']))
     
     
 }
-// if(isset($_REQUEST['sub']))
-// {
-// 	$num1=$_REQUEST['num1'];
-// 	$num2=$_REQUEST['num2'];
-// 	echo "Your Substraction : ".$ans=$num1-$num2;
-// }
-// if(isset($_REQUEST['multi']))
-// {
-// 	$num1=$_REQUEST['num1'];
-// 	$num2=$_REQUEST['num2'];
-// 	echo "Your Multiplication : ".$ans=$num1*$num2;
-// }
-
-// if(isset($_REQUEST['div']))
-// {
-// 	$num1=$_REQUEST['num1'];
-// 	$num2=$_REQUEST['num2'];
-// 	echo "Your Division : ".$ans=$num1/$num2;
-// }
-
 ?>
