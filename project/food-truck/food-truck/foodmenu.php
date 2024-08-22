@@ -129,7 +129,7 @@
                 <div class="row">
                   
                   <h4>pizza</h4>
-                    <div class="col-md-12">
+                    <div class="col-md-4">
                    
                         <div class="card card-body " style=" width:100%;">
                             <div class="media align-items-center  text-lg-left flex-column flex-lg-row" style="display: flex; width:100%;">
@@ -149,10 +149,7 @@
                                         <a href="#" data-abc="true">Restaurant ID</a>
                                     </h5>
 
-                                    <!-- <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
-                                            <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">ved</a></li>
-                                            <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">non-veg</a></li>
-                                        </ul> -->
+                                 
 
                                     <p class="mb-3">Veg Classic Pizza</p>
 
@@ -178,9 +175,101 @@
                            View cart</button></a>
                         </div>
                     
+                        
+                        <div class="card card-body " style=" width:100%;">
+                            <div class="media align-items-center  text-lg-left flex-column flex-lg-row" style="display: flex; width:100%;">
+
+                                <div class="mr-2 mb-3 mb-lg-0">
+
+                                    <img src="img/pizaa.jpg" width="150" height="150" style="margin:10px;" alt="">
+                                </div>
+
+
+
+                                <div class="media-body">
+                                    <h3 class="media-title font-weight-semibold  ">
+                                        <a href="#" data-abc="true">Pizza</a>
+                                    </h3>
+                                    <h5 class="media-title font-weight-semibold">
+                                        <a href="#" data-abc="true">Restaurant ID</a>
+                                    </h5>
+
+                                 
+
+                                    <p class="mb-3">Veg Classic Pizza</p>
+
+                                    <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                        <h3 class="mb-0 font-weight-semibold">350 rs</h3>
+
+                                    </div>
+                                    <!-- <ul class="list-inline list-inline-dotted mb-0">
+                                            <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile point</a></li>
+                                            <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                        </ul> -->
+                                       
+
+
+                                </div>
+                             
+                            </div>
+
+                            <a href="cart.php" style="width:100%;"> <button type="button" class="btn btn-warning mt-4 text-black" style="width:100%;"><i class="icon-cart-add mr-2"></i> 
+                            Add to cart</button></a>
+
+                            <a href="cart.php" style="width:100%;"> <button type="button" class="btn btn-info mt-4 text-black" style="width:100%;"><i class="icon-cart-add mr-2"></i> 
+                           View cart</button></a>
+                        </div>
+                    
+                   
+                        <div class="card card-body " style=" width:100%;">
+                            <div class="media align-items-center  text-lg-left flex-column flex-lg-row" style="display: flex; width:100%;">
+
+                                <div class="mr-2 mb-3 mb-lg-0">
+
+                                    <img src="img/pizaa.jpg" width="150" height="150" style="margin:10px;" alt="">
+                                </div>
+
+
+
+                                <div class="media-body">
+                                    <h3 class="media-title font-weight-semibold  ">
+                                        <a href="#" data-abc="true">Pizza</a>
+                                    </h3>
+                                    <h5 class="media-title font-weight-semibold">
+                                        <a href="#" data-abc="true">Restaurant ID</a>
+                                    </h5>
+
+                                 
+
+                                    <p class="mb-3">Veg Classic Pizza</p>
+
+                                    <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                        <h3 class="mb-0 font-weight-semibold">350 rs</h3>
+
+                                    </div>
+                                    <!-- <ul class="list-inline list-inline-dotted mb-0">
+                                            <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile point</a></li>
+                                            <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                        </ul> -->
+                                       
+
+
+                                </div>
+                             
+                            </div>
+
+                            <a href="cart.php" style="width:100%;"> <button type="button" class="btn btn-warning mt-4 text-black" style="width:100%;"><i class="icon-cart-add mr-2"></i> 
+                            Add to cart</button></a>
+
+                            <a href="cart.php" style="width:100%;"> <button type="button" class="btn btn-info mt-4 text-black" style="width:100%;"><i class="icon-cart-add mr-2"></i> 
+                           View cart</button></a>
+                        </div>
+
+                      
+                    
                 </div>
 
-                <div class="col-md-12">
+                <div class="col-md-4">
                    
                    <div class="card card-body " style=" width:100%;">
                        <div class="media align-items-center  text-lg-left flex-column flex-lg-row" style="display: flex; width:100%;">
@@ -229,13 +318,153 @@
 
                    </div>
                
+                   <div class="card card-body " style=" width:100%;">
+                            <div class="media align-items-center  text-lg-left flex-column flex-lg-row" style="display: flex; width:100%;">
+
+                                <div class="mr-2 mb-3 mb-lg-0">
+
+                                    <img src="img/pizaa.jpg" width="150" height="150" style="margin:10px;" alt="">
+                                </div>
+
+
+
+                                <div class="media-body">
+                                    <h3 class="media-title font-weight-semibold  ">
+                                        <a href="#" data-abc="true">Pizza</a>
+                                    </h3>
+                                    <h5 class="media-title font-weight-semibold">
+                                        <a href="#" data-abc="true">Restaurant ID</a>
+                                    </h5>
+
+                                 
+
+                                    <p class="mb-3">Veg Classic Pizza</p>
+
+                                    <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                        <h3 class="mb-0 font-weight-semibold">350 rs</h3>
+
+                                    </div>
+                                    <!-- <ul class="list-inline list-inline-dotted mb-0">
+                                            <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile point</a></li>
+                                            <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                        </ul> -->
+                                       
+
+
+                                </div>
+                             
+                            </div>
+
+                            <a href="cart.php" style="width:100%;"> <button type="button" class="btn btn-warning mt-4 text-black" style="width:100%;"><i class="icon-cart-add mr-2"></i> 
+                            Add to cart</button></a>
+
+                            <a href="cart.php" style="width:100%;"> <button type="button" class="btn btn-info mt-4 text-black" style="width:100%;"><i class="icon-cart-add mr-2"></i> 
+                           View cart</button></a>
+                        </div>
+                    
+               
            </div>
 
+           <div class="col-md-4">
+                   
+                   <div class="card card-body " style=" width:100%;">
+                       <div class="media align-items-center  text-lg-left flex-column flex-lg-row" style="display: flex; width:100%;">
+
+                           <div class="mr-2 mb-3 mb-lg-0">
+
+                               <img src="img/pizaa.jpg" width="150" height="150" style="margin:10px;" alt="">
+                           </div>
+
+
+
+                           <div class="media-body">
+                               <h3 class="media-title font-weight-semibold  ">
+                                   <a href="#" data-abc="true">Pizza</a>
+                               </h3>
+                               <h5 class="media-title font-weight-semibold">
+                                   <a href="#" data-abc="true">Restaurant ID</a>
+                               </h5>
+
+                               <!-- <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                       <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">ved</a></li>
+                                       <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">non-veg</a></li>
+                                   </ul> -->
+
+                               <p class="mb-3">Veg Classic Pizza</p>
+
+                               <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                   <h3 class="mb-0 font-weight-semibold">350 rs</h3>
+
+                               </div>
+                               <!-- <ul class="list-inline list-inline-dotted mb-0">
+                                       <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile point</a></li>
+                                       <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                   </ul> -->
+
+
+
+                           </div>
+                       </div>
+
+                       <button type="button" class="btn btn-warning mt-4 tect-black"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+                       <button type="button" class="btn btn-info mt-4 tect-black"><i class="icon-cart-add mr-2"></i> view cart</button>
+
+
+
+
+                   </div>
+               
+                   <div class="card card-body " style=" width:100%;">
+                            <div class="media align-items-center  text-lg-left flex-column flex-lg-row" style="display: flex; width:100%;">
+
+                                <div class="mr-2 mb-3 mb-lg-0">
+
+                                    <img src="img/pizaa.jpg" width="150" height="150" style="margin:10px;" alt="">
+                                </div>
+
+
+
+                                <div class="media-body">
+                                    <h3 class="media-title font-weight-semibold  ">
+                                        <a href="#" data-abc="true">Pizza</a>
+                                    </h3>
+                                    <h5 class="media-title font-weight-semibold">
+                                        <a href="#" data-abc="true">Restaurant ID</a>
+                                    </h5>
+
+                                 
+
+                                    <p class="mb-3">Veg Classic Pizza</p>
+
+                                    <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                        <h3 class="mb-0 font-weight-semibold">350 rs</h3>
+
+                                    </div>
+                                    <!-- <ul class="list-inline list-inline-dotted mb-0">
+                                            <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile point</a></li>
+                                            <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                        </ul> -->
+                                       
+
+
+                                </div>
+                             
+                            </div>
+
+                            <a href="cart.php" style="width:100%;"> <button type="button" class="btn btn-warning mt-4 text-black" style="width:100%;"><i class="icon-cart-add mr-2"></i> 
+                            Add to cart</button></a>
+
+                            <a href="cart.php" style="width:100%;"> <button type="button" class="btn btn-info mt-4 text-black" style="width:100%;"><i class="icon-cart-add mr-2"></i> 
+                           View cart</button></a>
+                        </div>
+                    
+               
+           </div>
              
             </div>
             <h4>Thali</h4>
-        <div class="col-md-12">
-
+        <div class="col-md-4">
+<div class="row">
             <div class="card card-body " style=" width:100%;">
                 <div class="media align-items-center  text-lg-left flex-column flex-lg-row" style="display: flex; width:100%;">
 
@@ -280,58 +509,18 @@
 
 
             </div>
+          
+
+
+
+         
         </div>
-        <div class="col-md-12">
-
-            <div class="card card-body " style=" width:100%;">
-                <div class="media align-items-center  text-lg-left flex-column flex-lg-row" style="display: flex; width:100%;">
-
-                    <div class="mr-2 mb-3 mb-lg-0">
-
-                        <img src="img/thali.jpg" width="150" height="150" style="margin:10px;" alt="">
-                    </div>
-
-
-
-                    <div class="media-body">
-                        <h3 class="media-title font-weight-semibold   ">
-                            <a href="#" data-abc="true">gujrati thali</a>
-                        </h3>
-                        <h5 class="media-title font-weight-semibold">
-                            <a href="#" data-abc="true">Restaurant ID</a>
-                        </h5>
-
-                        <!-- <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
-                                            <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">ved</a></li>
-                                            <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">non-veg</a></li>
-                                        </ul> -->
-
-                        <p class="mb-3">gujrati thali</p>
-
-                        <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
-                            <h3 class="mb-0 font-weight-semibold">250 rs</h3>
-
-                        </div>
-                        <!-- <ul class="list-inline list-inline-dotted mb-0">
-                                            <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile point</a></li>
-                                            <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
-                                        </ul> -->
-
-
-
-                    </div>
-                </div>
-
-                <button type="button" class="btn btn-warning mt-4 tect-black"><i class="icon-cart-add mr-2"></i> Add to cart</button>
-                <button type="button" class="btn btn-info mt-4 tect-black"><i class="icon-cart-add mr-2"></i> view cart</button>
-
-
-            </div>
+    
+       
         </div>
-
 
         <h4>Dessert</h4>
-        <div class="col-md-12">
+        <div class="col-md-4">
 
             <div class="card card-body " style=" width:100%;">
                 <div class="media align-items-center  text-lg-left flex-column flex-lg-row" style="display: flex; width:100%;">
