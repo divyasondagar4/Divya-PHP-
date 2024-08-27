@@ -18,7 +18,7 @@
     <div class="container">
         <div class="row text-center " style="padding-top:100px;">
             <div class="col-md-12">
-                <h1 style="color:orange; background-color:navy; border-radius:15px;"></i>Food-Track</h1>
+                <h1 style="color:orange;  border-radius:15px;"></i>Food-Track</h1>
             </div>
         </div>
          <div class="row ">
