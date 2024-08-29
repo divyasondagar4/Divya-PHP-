@@ -8,7 +8,7 @@ class control
 
         switch($path)
         {
-               case '/':
+               case '/index':
                 include_once('index.php');
                 break;
 

@@ -1,3 +1,13 @@
+<?php
+function active($currect_page){
+    $url_array =  explode('/', $_SERVER['REQUEST_URI']) ;
+    $url = end($url_array);  
+    if($currect_page == $url){
+        echo 'active-menu'; //class name in css 
+    } 
+  }
+?>
+
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />    
  
 <div id="wrapper">
@@ -29,10 +39,10 @@ font-size: 16px;"> Last access :  &nbsp; <a href="login" class="btn btn-danger s
                     </li>
 
                     <li>
-                        <a class="active-menu" href="index"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
+                        <a class="<?php active("index")?>" href="index"><i class="fa fa-dashboard fa-3x"></i> Dashboard</a>
                     </li>
                     <li>
-                      <a href="#"><i class="fa-solid fa-shop fa-3x"></i>Restaurant</a>
+                      <a href="#"><i class="fa-solid fa-shop fa-3x , <?php active("Restaurant")?>" ></i>Restaurant</a>
                         <ul class="nav nav-second-level">
                             <li>
                                 <a href="add_Restaurant">Add Restaurant</a>
