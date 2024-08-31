@@ -3,7 +3,7 @@
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Bootstrap Admin Template : Binary Admin</title>
+    <title>Admin Panel Railway</title>
 	<!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -57,96 +57,33 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Divya</td>
-                                            <td>rkmali@gmail.com</td>
-                                            <td>Divya123</td>
-                                            <td>0123789456</td>
-                                            <td>Active</td>
-                                            <td>1</td>
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Divya</td>
-                                            <td>sd@gmail.com</td>
-                                            <td>Divya123</td>
-                                            <td>0123789456</td>
-                                            <td>Active</td>
-                                            <td>2</td>
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Divya</td>
-                                            <td>sd@gmail.com</td>
-                                            <td>Divya123</td>
-                                            <td>0123789456</td>
-                                            <td>Active</td>
-                                            <td>3</td>
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Divya</td>
-                                            <td>sd@gmail.com</td>
-                                            <td>Divya123</td>
-                                            <td>0123789456</td>
-                                            <td>Active</td>
-                                            <td>3</td>
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Divya</td>
-                                            <td>sd@gmail.com</td>
-                                            <td>Divya123</td>
-                                            <td>0123789456</td>
-                                            <td>Active</td>
-                                            <td>3</td>
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr>
-                                        
 
+                                    <?php 
+									foreach($customer_arr as $data)
+									{
+									?>
                                         <tr>
-                                            <td>1</td>
-                                            <td>Divya</td>
-                                            <td>sd@gmail.com</td>
-                                            <td>Divya123</td>
-                                            <td>0123789456</td>
-                                            <td>Active</td>
-                                            <td>3</td>
+                                        <tr>
+                                            <td><?php echo $data->customer_id; ?></td>
+                                            <td><?php echo $data->name; ?></td>
+                                            <td><?php echo $data->email; ?></td>
+                                            <td><?php echo $data->password; ?></td>
+                                            <td><?php echo $data->contact_number; ?></td>
+                                            <td><?php echo $data->status; ?></td>
+                                            <td><?php echo $data->city_id; ?></td>
+
+
+                                           
 											<td>
 												<a href="#" class="btn btn-primary">Edit</a>
 												<a href="#" class="btn btn-danger">Delete</a>
 												<a href="#" class="btn btn-info">Status</a>
 											</td>
                                         </tr>
-                                        
-
+                                        <?php
+									}
+									?>  
                                        
-                                    </tbody>
                                 </table>
                             </div>
                         </div>

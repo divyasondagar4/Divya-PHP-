@@ -3,7 +3,7 @@
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Bootstrap Admin Template : Binary Admin</title>
+    <title>Admin Panel Railway</title>
 	<!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -54,67 +54,28 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>4</td>
-                                            <td>3</td>
-                                            <td>*****</td>
-                                            <td>Good One</td>
-											<td>
+                                     <?php
+                                     
+                                     foreach($feedback_arr as $data)
+                                     {
+
+                                   
+                                     ?> 
+
+                                          <td><?php echo $data->feedback_id; ?></td>
+                                            <td><?php echo $data->customer_id; ?></td>
+                                            <td><?php echo $data->order_id; ?></td>
+                                            <td><?php echo $data->rating; ?></td>
+                                            <td><?php echo $data->review; ?></td>
+                                            <td>
 												<a href="#" class="btn btn-primary">Edit</a>
 												<a href="#" class="btn btn-danger">Delete</a>
 												<a href="#" class="btn btn-info">Status</a>
 											</td>
                                         </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>4</td>
-                                            <td>3</td>
-                                            <td>*****</td>
-                                            <td>Good One</td>
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>4</td>
-                                            <td>3</td>
-                                            <td>*****</td>
-                                            <td>Good One</td>
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr> 
-                                        
-                                        <tr>
-                                            <td>1</td>
-                                            <td>4</td>
-                                            <td>3</td>
-                                            <td>*****</td>
-                                            <td>Good One</td>
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr> 
-                                        <tr>
-                                            <td>1</td>
-                                            <td>4</td>
-                                            <td>3</td>
-                                            <td>*****</td>
-                                            <td>Good One</td>
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr> 
+                                        <?php
+									}
+									?>  
                                     </tbody>
                                 </table>
                             </div>

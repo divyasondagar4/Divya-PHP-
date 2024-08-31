@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Bootstrap Admin Template : Binary Admin</title>
+    <title>Admin Panel Railway</title>
     <!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
       <!-- FONTAWESOME STYLES-->
@@ -87,7 +87,7 @@
               
                 <!-- /. ROW  -->
       
-                    <div class="col-md-12 col-sm-12 col-xs-12">
+                    <!-- <div class="col-md-12 col-sm-12 col-xs-12">
 
                         <div class="panel panel-default">
                             
@@ -169,7 +169,7 @@
                 <!-- /. ROW  -->
             </div>
         </div>
-        
+         -->
         <?php
   include_once('footer.php');
   ?>    

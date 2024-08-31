@@ -3,7 +3,7 @@
 <head>
       <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Free Bootstrap Admin Template : Binary Admin</title>
+    <title>Admin Panel Railway</title>
 	<!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
@@ -44,72 +44,39 @@
                                     <thead>
                                         <tr>
                                             <th>food_id</th>
+                                            <th>restaurant_id</th>
                                             <th>name</th>
+                                            <th>Description</th>
                                             <th>price</th>
                                             <th>Image</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Pizza</td>
-                                            <td>Rs. 300/-</td>
-                                            <td><img src="./image/food.jpg" alt=""style=" height:50px; width:70px; align:center;"></td>
-                                           
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>burger</td>
-                                            <td>Rs. 349/-</td>
-                                            <td><img src="./image/food.jpg" alt=""style=" height:50px; width:70px; align:center;"></td>
-                                           
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>sendwich</td>
-                                            <td>Rs. 399/-</td>
-                                            <td><img src="./image/food.jpg" alt=""style=" height:50px; width:70px; align:center;"></td>
-                                           
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr>
-                                        <td>3</td>
-                                            <td>sendwich</td>
-                                            <td>Rs. 399/-</td>
-                                            <td><img src="./image/food.jpg" alt=""style=" height:50px; width:70px; align:center;"></td>
-                                           
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr>
-                                        <td>3</td>
-                                            <td>sendwich</td>
-                                            <td>Rs. 399/-</td>
-                                            <td><img src="./image/food.jpg" alt=""style=" height:50px; width:70px; align:center;"></td>
-                                           
-											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
-												<a href="#" class="btn btn-danger">Delete</a>
-												<a href="#" class="btn btn-info">Status</a>
-											</td>
-                                        </tr>
                                        
+                                       <?php
+
+                                       foreach($food_arr as $data)
+                                       {
+
+                                       ?>
+
+                                       <td><?php echo $data->food_id; ?></td>
+                                       <td><?php echo $data->restaurant_id; ?></td>
+                                         <td><?php echo $data->name; ?></td>
+                                           <td><?php echo $data->description; ?></td>
+                                           <td><?php echo $data->price; ?></td>
+                                           <td><?php echo $data->image; ?></td>
+
+                                           <td>
+												<a href="#" class="btn btn-primary">Edit</a>
+												<a href="#" class="btn btn-danger">Delete</a>
+												<a href="#" class="btn btn-info">Status</a>
+											</td>
+                                        </tr>
+                                        <?php
+									}
+									?>  
                                     </tbody>
                                 </table>
                             </div>
