@@ -1,9 +1,18 @@
 <?php
 
-class control
+
+
+include_once('../Admin_train/model.php'); // 1 step load model page 
+
+ 
+class control extends model // 2 step extend model 
 {
+
     function __construct()
     {
+        
+        model::__construct(); // 3 call model contruct so database connectivity
+
         $path=$_SERVER['PATH_INFO'];
 
         switch($path)
@@ -21,7 +30,30 @@ class control
                         break;
 
                         case '/contact':
-                            include_once('contact.php');
+                            if(isset($_REQUEST['submit']))
+				{
+					
+					$Name=$_REQUEST['Name'];
+					$Email=$_REQUEST['Email']; 
+                    $Comment=$_REQUEST['Comment']; 
+					$complaint=$_REQUEST['complaint']; 
+					
+					
+					$data=array("Name"=>$Name,"Email"=>$Email,
+                    "Comment"=>$Comment,"complaint"=>$complaint,);
+					
+					$res=$this->insert('contact',$data);
+					if($res)
+					{					
+						
+						echo "<script>
+							alert('Submit Success');
+							window.location='contact';
+						</script>";
+					}
+				}
+				include_once('contact.php');
+                            
                             break;
 
                             case '/login':
@@ -53,7 +85,7 @@ class control
             }
             
         }
-       
+     
    
 $obj=new control;
 ?>
