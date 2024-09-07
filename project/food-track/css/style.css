@@ -100,7 +100,7 @@
 
 .navbar-dark .navbar-nav .nav-link:hover,
 .navbar-dark .navbar-nav .nav-link.active {
-    color: var(--white);
+    color: var(--primary) !important;
 }
 
 .navbar-dark .navbar-brand img {
@@ -150,15 +150,15 @@
 }
 
 
-/*** Hero header.php ***/
-.hero-header.php {
+/*** Hero Header ***/
+.hero-header {
     background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.hero-header.php img {
+.hero-header img {
     animation: imgRotate 50s linear infinite;
 }
 
@@ -413,8 +413,8 @@
 }
 
 
-/*** footer.php ***/
-.footer.php .btn.btn-social {
+/*** Footer ***/
+.footer .btn.btn-social {
     margin-right: 5px;
     width: 35px;
     height: 35px;
@@ -427,11 +427,11 @@
     transition: .3s;
 }
 
-.footer.php .btn.btn-social:hover {
+.footer .btn.btn-social:hover {
     color: var(--primary);
 }
 
-.footer.php .btn.btn-link {
+.footer .btn.btn-link {
     display: block;
     margin-bottom: 5px;
     padding: 0;
@@ -443,7 +443,7 @@
     transition: .3s;
 }
 
-.footer.php .btn.btn-link::before {
+.footer .btn.btn-link::before {
     position: relative;
     content: "\f105";
     font-family: "Font Awesome 5 Free";
@@ -451,28 +451,28 @@
     margin-right: 10px;
 }
 
-.footer.php .btn.btn-link:hover {
+.footer .btn.btn-link:hover {
     letter-spacing: 1px;
     box-shadow: none;
 }
 
-.footer.php .copyright {
+.footer .copyright {
     padding: 25px 0;
     font-size: 15px;
     border-top: 1px solid rgba(256, 256, 256, .1);
 }
 
-.footer.php .copyright a {
+.footer .copyright a {
     color: var(--light);
 }
 
-.footer.php .footer.php-menu a {
+.footer .footer-menu a {
     margin-right: 15px;
     padding-right: 15px;
     border-right: 1px solid rgba(255, 255, 255, .1);
 }
 
-.footer.php .footer.php-menu a:last-child {
+.footer .footer-menu a:last-child {
     margin-right: 0;
     padding-right: 0;
     border-right: none;

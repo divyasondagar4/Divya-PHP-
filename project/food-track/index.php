@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>food track</title>
+    <title>Food Track</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -45,11 +45,11 @@
 
 
         <!-- Navbar & Hero Start -->
-        <div class="container-xxl position-relative p-0">
+        <div class="container-fluid-xxl position-relative p-0">
             <?php
             include_once('header.php');
             ?>
-            <div class="container-xxl py-5 bg-dark hero-header.php mb-5">
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container my-5 py-5">
                     <div class="row align-items-center g-5">
                         <div class="col-lg-6 text-center text-lg-start">
@@ -59,10 +59,10 @@
                                 Get Tasty, Fresh & Hygienic Food from Trusted Restaurants with Contactless Delivery on Your Train Seat by FSSAI Approved E-Catering by Food Track
 
                             </p>
-                            <a href="order" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">order Now</a>
+                            <a href="Order.php" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">order Now</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                            <img class="img-fluid" src="img/hero.png" alt="">
+                            <img class="img-fluid" src="img/hero2.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -581,7 +581,7 @@
         <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content rounded-0">
-                    <div class="modal-header.php">
+                    <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
@@ -726,11 +726,11 @@
         <!-- Testimonial End -->
 
 
-        <!-- footer.php Start -->
+        <!-- Footer Start -->
         <?php
         include_once('footer.php');
         ?>
-        <!-- footer.php End -->
+        <!-- Footer End -->
 
 
         <!-- Back to Top -->

@@ -77,13 +77,17 @@
                     <form>
                         <div class="input-group">
                             <label for="enter-train-no"> Train no</label>
-                            <input type="number" id="enter-train-no" name="enter-train-no" placeholder="Enter Train No " required>
+                            <input type="number" id="enter-train-no"  placeholder="Enter Train No " name="train_no"required>
                         </div>
                         <div class="input-group">
                             <label for="date">Date</label>
-                            <input type="date" id="date" name="date" required>
+                            <input type="date" id="date" name="order_date" required>
                         </div>
-                        <a href="station" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">order Now</a>
+                        <!-- <input  class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft" name="submit" value="order now"> -->
+                        <div class="col-12">
+                                    <input class="btn btn-danger mt-8 " style="text-align:center; width:100%; "type="submit" name="submit" value="order Now">
+                                     
+                                    </div>
 
                     </form>
                 </div>
@@ -94,11 +98,13 @@
                 <form>
                     <div class="input-group">
                         <label for="enter-pnr">Enter PNR no</label>
-                        <input type="number" id="enter-pnr" name="enter-pnr" placeholder="Enter 10 Digit PNR " required>
+                        <input type="number" id="enter-pnr"  placeholder="Enter 10 Digit PNR " name="pnr_no" required>
                     </div>
 
-                    <a href="station" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">order Now</a>
-
+                    <div class="col-12">
+                                    <input class="btn btn-danger mt-8 " style="text-align:center; width:100%; "type="submit" name="send" value="order Now">
+                                     
+                                    </div>
                 </form>
             </div>
         </div>

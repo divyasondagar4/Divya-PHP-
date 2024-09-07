@@ -75,25 +75,18 @@
                 <div class="row g-4">
                     <div class="col-12">
                         <div class="row gy-4">
-                            <!-- <div class="col-md-4">
-                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Booking</h5>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>book@example.com</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">General</h5>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>info@example.com</p>
-                            </div>
-                            <div class="col-md-4">
-                                <h5 class="section-title ff-secondary fw-normal text-start text-primary">Technical</h5>
-                                <p><i class="fa fa-envelope-open text-primary me-2"></i>tech@example.com</p>
-                            </div> -->
+                          
+                        
+
+
                         </div>
                     </div>
                     
                     <div class="col-md-12">
                         <div class="wow fadeInUp" data-wow-delay="0.2s">
                             <form>
-                                <div class="row g-3">
+                                <div c
+                                lass="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
                                             <input type="text" class="form-control" id="name" name="Name" placeholder="Your Name">
