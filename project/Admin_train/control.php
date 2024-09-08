@@ -66,6 +66,7 @@ class control extends model // 2 step extend model
                                                     break;
 
                                                     case '/manage_Restaurant':
+
                                                         $restaurant_arr=$this->select('restaurant');
 
                                                         include_once('manage_Restaurant.php');
@@ -80,6 +81,32 @@ class control extends model // 2 step extend model
                                                                 break;
                                     
                                                                 case '/add_Restaurant':
+                                                                    $loca_arr=$this->select("city");
+				if(isset($_REQUEST['submit']))
+				{
+					$name=$_REQUEST['name'];
+					$address=$_REQUEST['address']; 
+                    $image=$_FILES['image']['name'];
+                    $city_id=$_REQUEST['city_id'];
+					$Google_Profile=$_REQUEST['Google_Profile'];
+					
+					
+					
+					$data=array("name"=>$name,"address"=>$address,"city_id"=>$city_id,"image"=>$image,"Google_Profile"=>$Google_Profile);
+					
+					$res=$this->insert('restaurant',$data);
+					if($res)
+					{					
+						$path="img/restuarant/".$image;
+						$tmp_image=$_FILES['image']['tmp_name'];
+						move_uploaded_file($tmp_image,$path);
+						
+						echo "<script>
+							alert('Data Add Success');
+							window.location='add_Restaurant';
+						</script>";
+					}
+				}
                                                                     include_once('add_Restaurant.php');
                                                                     break;
                                                     

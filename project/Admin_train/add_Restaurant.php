@@ -38,37 +38,48 @@
                            Add Shop
                         </div>
                         <div class="panel-body">
-                            <form role="form">
-                                        <div class="form-group">
+                            <form role="form"  method="post" enctype="multipart/form-data">
+                                        <!-- <div class="form-group">
                                             <label>shop_id</label>
-                                            <input class="form-control" type="number">
+                                            <input class="form-control" type="number" name="">
                                             <p class="help-block">Enter Shop ID here.</p>
-                                        </div>
+                                        </div> -->
 									<div class="form-group">
-                                            <label>shop_name</label>
-                                            <input class="form-control" type="text">
-                                     <p class="help-block">Enter Shop name here.</p>
+                                            <label>Restaurant_name</label>
+                                            <input class="form-control" type="text" name="name">
+                                     <p class="help-block">Enter Restaurant name here.</p>
                                         </div>
                                             <div class="form-group">
                                             <label>address</label>
-                                            <textarea class="form-control" rows="3"></textarea>
+                                            <textarea class="form-control" rows="3" name="address"></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label>image</label>
-                                            <input class="form-control" type="file">
+                                            <input class="form-control" type="file" name="image">
                                             <p class="help-block">Upload File here.</p>
                                         </div>
-                                        <div class="form-group">
-                                            <label>city_id</label>
-                                            <input class="form-control" type="number">
-                                            <p class="help-block">Enter City ID here.</p>
-                                        </div>
+                                      
+                                        
+										<div class="form-group">
+                                            <label>Select Example</label>
+                                            <select name="city_id" class="form-control">
+												<option>Select City</option>
+											<?php
+											foreach($loca_arr as $w)
+											{
+											?>
+                                                <option value="<?php echo $w->id?>"><?php echo $w->city_id?></option>
+											<?php
+											}
+											?>	
+                                            </select>
+
                                         <div class="form-group">
                                             <label>google_profile</label>
-                                            <input class="form-control" type="url">
+                                            <input class="form-control" type="url" name="Google_Profile">
                                             <p class="help-block">Enter URL here.</p>
                                         </div>
-                                        <button type="submit" class="btn btn-info">Send Message </button>
+                                        <button type="submit" name="submit"class="btn btn-info">Send Message </button>
 
                                     </form>
                             </div>

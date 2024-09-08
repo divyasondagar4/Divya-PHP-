@@ -29,11 +29,11 @@ class model
 		$values_arr=array_values($arr);
 		$values=implode("','",$values_arr); 
 		
-		$sel="insert into $tbl ($column) value ('$values')";  // query
+	echo	$sel="insert into $tbl ($column) value ('$values')";  // query
 		$run=$this->conn->query($sel);  // query run on db
 		return $run;
 	}
-	
+
 
 	
 }
