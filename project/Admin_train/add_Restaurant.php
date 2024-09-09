@@ -68,7 +68,7 @@
 											foreach($loca_arr as $w)
 											{
 											?>
-                                                <option value="<?php echo $w->id?>"><?php echo $w->city_id?></option>
+                                                <option value="<?php echo $w->city_id?>"><?php echo $w->city_name?></option>
 											<?php
 											}
 											?>	

@@ -92,7 +92,7 @@ class control extends model // 2 step extend model
 					
 					
 					
-					$data=array("name"=>$name,"address"=>$address,"city_id"=>$city_id,"image"=>$image,"Google_Profile"=>$Google_Profile);
+					$data=array("name"=>$name,"address"=>$address,"image"=>$image,"city_id"=>$city_id,"Google_Profile"=>$Google_Profile);
 					
 					$res=$this->insert('restaurant',$data);
 					if($res)
