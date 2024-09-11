@@ -44,38 +44,49 @@ include_once('header.php');
                         </div>
                         <div class="panel-body">
                             <form role="form">
-                                        <div class="form-group">
+                                        <!-- <div class="form-group">
                                             <label>food_id</label>
-                                            <input class="form-control" type="number">
+                                            <input class="form-control" type="number" name="food_id">
                                             <p class="help-block">Enter Food ID here.</p>
-                                        </div>
-									<div class="form-group">
-                                            <label>shop_id</label>
-                                            <input class="form-control" type="number">
+                                        </div> -->
+										<div class="form-group">
+                                            <label>Select Example</label>
+                                            <select name="restaurant_id" class="form-control">
+												<option>Select restaurant</option>
+											<?php
+											foreach($restaurant_arr as $w)
+											{
+											?>
+                                                <option value="<?php echo $w->restaurant_id?>"><?php echo $w->restaurant_id?></option>
+											<?php
+											}
+											?>	
+                                            </select>
+
                                      <p class="help-block">Enter Shop ID here.</p>
                                         </div>
                                         <div class="form-group">
                                             <label>name</label>
-                                            <input class="form-control" type="text">
+                                            <input class="form-control" type="text" name="name">
                                      <p class="help-block">Enter Food Name here.</p>
                                         </div>
                                             <div class="form-group">
                                             <label>description</label>
-                                            <textarea class="form-control" rows="3"></textarea>
+                                            <textarea class="form-control" rows="3"name="description" ></textarea>
                                         </div>
                                         <div class="form-group">
                                             <label>price</label>
-                                            <input class="form-control" type="text">
+                                            <input class="form-control" type="text" name="price">
                                      <p class="help-block">Enter Enter here.</p>
                                         </div>
                                         <div class="form-group">
                                             <label>image</label>
-                                            <input class="form-control" type="file">
+                                            <input class="form-control" type="file" name="image">
                                      <p class="help-block">Enter Food Image here.</p>
                                         </div>
 										
 										
-                                        <button type="submit" class="btn btn-info">Add Food</button>
+                                        <button type="submit" name="submit"class="btn btn-info">Send Message </button>
 
                                     </form>
                             </div>

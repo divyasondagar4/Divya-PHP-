@@ -33,7 +33,23 @@ class model
 		$run=$this->conn->query($sel);  // query run on db
 		return $run;
 	}
-
+// login
+function select_where($tbl,$arr)
+{
+	$column_arr=array_keys($arr);
+	$values_arr=array_values($arr);
+	
+	$sel="select * from $tbl where 1=1";  // 1=1 means query contnue
+	$i=0;
+	foreach($arr as $w)
+	{
+		$sel.=" and $column_arr[$i]='$values_arr[$i]'";
+		$i++;
+	}
+	
+	$run=$this->conn->query($sel);  // query run on db
+	return $run;
+}
 
 	
 }

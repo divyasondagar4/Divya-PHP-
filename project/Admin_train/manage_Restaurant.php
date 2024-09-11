@@ -66,7 +66,7 @@
                                             <td><?php echo $data->restaurant_id; ?></td>
                                             <td><?php echo $data->name; ?></td>
                                             <td><?php echo $data->address; ?></td>
-                                           <td><a href="<?php echo $data->google;?>"><img src="img/restuarant/<?php echo $data->img?>" width="50px"/></a></td>
+                                           <td><a href="<?php echo $data->google;?>"><img src="assets/img/restaurant/ echo $data->image?>" width="50px"/></a></td>
                                             <td><?php echo $data->city_id; ?></td>
                                             <td><?php echo $data->Google_Profile; ?></td>
 
