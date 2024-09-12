@@ -93,12 +93,57 @@ class control extends model // 2 step extend model
                     }
                 }
                 include_once('contact.php');
-
+               
                 break;
-            case '/login':
-                include_once('login.php');
+                case '/login':
+                
+                    if(isset($_REQUEST['login']))
+                    {
+                        $email=$_REQUEST['email'];
+                        $password=md5($_REQUEST['password']); // pass encrypt
+                        
+                        $where=array("email"=>$email,"password"=>$password);
+                        
+                        $res=$this->select_where('customer',$where);
+                        $ans=$res->num_rows;  // row wise check condtion 
+                        if($ans==1) // 1 means true
+                        {
+                            echo"<script>
+                            alert('Login Suceess');
+                            window.location='index';
+                            </script>";
+                        }
+                        else
+                        {
+                            echo"<script>
+                            alert('Login Failed');
+                            window.location='login';
+                            </script>";
+                        }	
+                    }
+    
+                    if(isset($_REQUEST['signup']))
+                    {
+                        $name=$_REQUEST['name'];
+                        $contact_number=$_REQUEST['contact_number'];
+                        $email=$_REQUEST['email'];
+                        $password=md5($_REQUEST['password']);
+    
+                        $data=array("name"=>$name,"contact_number"=>$contact_number,"email"=>$email,"password"=>$password);
+                        $res=$this->insert('customer',$data);
+    
+                        if($res)
+                        {
+                            echo"<script>
+                            alert('Submit Suceess');
+                            window.location='login';
+                            </script>";
+                        }                
+                    }
+                    
+                    include_once('login.php');
                 break;
-
+    
             case '/restaurants':
                 include_once('restaurants.php');
                 break;

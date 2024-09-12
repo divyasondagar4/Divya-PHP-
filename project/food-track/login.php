@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>food-track</title>
+    <title>Login</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -53,16 +53,9 @@
             include_once('header.php');
             ?>
 
-            <div class="container-xxl py-5 bg-dark hero-header.php mb-5">
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
                 <div class="container text-center my-5 pt-5 pb-4">
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Login/Sign-up</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Login/Sign-up</li>
-                        </ol>
-                    </nav>
                 </div>
             </div>
         </div>
@@ -70,7 +63,7 @@
 
 
   <!-- login start -->
-  <div class="form">
+  <div class="form" method="post">
       
       <ul class="tab-group">
         <li class="tab active"><a href="#signup">Sign Up</a></li>
@@ -81,21 +74,21 @@
         <div id="signup">   
           <h1  style="color: white; margin-bottom:40px;">Sign Up </h1>
           
-          <form action="/" method="post">
+          <form action="" method="post">
           
           <div class="top-row">
             <div class="field-wrap">
               <label>
-                First Name<span class="req">*</span>
+                 Name<span class="req">*</span>
               </label>
-              <input type="text" required autocomplete="off" />
+              <input type="text" required autocomplete="on" name="name">
             </div>
         
             <div class="field-wrap">
               <label>
-                Last Name<span class="req">*</span>
+                Contact<span class="req">*</span>
               </label>
-              <input type="text"required autocomplete="off"/>
+              <input type="number"required autocomplete="on" name="contact_number">
             </div>
           </div>
 
@@ -103,17 +96,17 @@
             <label>
               Email Address<span class="req">*</span>
             </label>
-            <input type="email"required autocomplete="off"/>
+            <input type="email" required autocomplete="on" name="email">
           </div>
           
           <div class="field-wrap">
             <label>
               Set A Password<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+            <input type="password"required autocomplete="on" name="password">
           </div>
           
-          <button type="submit" class="button button-block">Get Started</button>
+          <button type="submit" class="button button-block" name="signup">Get Started</button>
           
           </form>
 
@@ -122,25 +115,25 @@
         <div id="login">   
           <h1 style="color: white; margin-bottom:40px;">Welcome Back!</h1>
           
-          <form action="/" method="post">
+          <form action="" method="post">
           
             <div class="field-wrap">
             <label>
               Email Address<span class="req">*</span>
             </label>
-            <input type="email"required autocomplete="off"/>
+            <input type="email"required autocomplete="on" name="email">
           </div>
           
           <div class="field-wrap">
             <label>
               Password<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="off"/>
+            <input type="password"required autocomplete="on" name="password">
           </div>
           
           <p class="forgot"><a href="#">Forgot Password?</a></p>
           
-          <button class="button button-block"/>Log In</button>
+          <button type="submit" class="button button-block" name="login">Login</button>
           
           </form>
 
@@ -151,11 +144,11 @@
 </div> <!-- /form -->
   <!-- login end -->
 
-        <!-- footer.php Start -->
+        <!-- Footer Start -->
         <?php
         include_once('footer.php');
         ?>
-        <!-- footer.php End -->
+        <!-- Footer End -->
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>

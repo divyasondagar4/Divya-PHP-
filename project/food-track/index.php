@@ -45,12 +45,12 @@
 
 
         <!-- Navbar & Hero Start -->
-        <div class="container-fluid-xxl position-relative p-0">
+        <div class="container-xxl position-relative p-0">
             <?php
             include_once('header.php');
             ?>
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container my-5 py-5">
+                <div class="container-fluid my-5 py-5">
                     <div class="row align-items-center g-5">
                         <div class="col-lg-6 text-center text-lg-start">
                             <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
@@ -73,7 +73,7 @@
 
         <!-- Service Start -->
         <div class="container-xxl py-5">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row g-4">
                     <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="service-item rounded pt-3">

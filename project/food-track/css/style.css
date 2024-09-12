@@ -148,6 +148,13 @@
         background: var(--dark) !important;
     }
 }
+@media (min-width: 992px) {
+    .container-xxlposition-relativep-0 {
+        width: 100%;
+    }
+    
+   
+}
 
 
 /*** Hero Header ***/
@@ -473,6 +480,9 @@
 }
 
 .footer .footer-menu a:last-child {
+
+
+
     margin-right: 0;
     padding-right: 0;
     border-right: none;
