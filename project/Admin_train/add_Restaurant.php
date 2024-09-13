@@ -35,7 +35,7 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
                <div class="panel panel-info">
                         <div class="panel-heading">
-                           Add Shop
+                           Add Restaurant
                         </div>
                         <div class="panel-body">
                             <form role="form"  method="post" enctype="multipart/form-data">
@@ -61,7 +61,7 @@
                                       
                                         
 										<div class="form-group">
-                                            <label>Select Example</label>
+                                            <label>Select city</label>
                                             <select name="city_id" class="form-control">
 												<option>Select City</option>
 											<?php

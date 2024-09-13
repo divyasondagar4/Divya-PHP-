@@ -66,7 +66,7 @@
                                          <td><?php echo $data->name; ?></td>
                                            <td><?php echo $data->description; ?></td>
                                            <td><?php echo $data->price; ?></td>
-                                           <td><a href="<?php echo $data->google;?>"><img src="assets/img/food/ echo $data->image?>" width="50px"/></a></td>
+                                           <td><?php echo $data->image;?></td>
 
                                            <td>
 												<a href="#" class="btn btn-primary">Edit</a>

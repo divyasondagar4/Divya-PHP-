@@ -9,6 +9,7 @@ class control extends model // 2 step extend model
     function __construct()
     {
 
+        session_start();
         model::__construct(); // 3 call model contruct so database connectivity
 
 
@@ -16,30 +17,71 @@ class control extends model // 2 step extend model
 
         switch ($path) {
 
+
             case '/admin':
-                if (isset($_REQUEST['login'])) {
-                    $admin_email=$_REQUEST['admin_email'];
-                    $admin_password=md5($_REQUEST['admin_password']); // pass encrypt
-
-                    $where = array("admin_email"=>$admin_email,"admin_password"=>$admin_password);
-
-                    $res = $this->select_where('admin',$where);
-                    $ans = $res->num_rows;  // row wise check condtion 
-                    if ($ans == 1) // 1 means true
-                    {
-                       echo "<script>
-                       alert('Login succes');
-                       window.location='/Admin_train/index';
-                       </script>";
-                    } else {
-                        echo "<script>
-                       alert('Login Failed');
-                       window.location='/admin';
-                       </script>";
-                    }
-                }
-                include_once('login.php');
-                break;
+				if(isset($_REQUEST['login']))
+				{
+					$admin_email=$_REQUEST['admin_email'];
+					$admin_password=md5($_REQUEST['admin_password']); // password encrypt
+					
+					$where=array("admin_email"=>$admin_email,"admin_password"=>$admin_password);
+					
+					$res=$this->select_where('admin',$where);
+					$ans=$res->num_rows;  // row wise check condtion 
+					if($ans==1) // 1 means true
+					{
+						
+						$fetch=$res->fetch_object();
+						
+						//create_session
+						$_SESSION['admin']=$fetch->admin_email;
+						echo "<script>
+							alert('Login Success');
+							window.location='index';
+						</script>";
+					}
+					else
+					{
+						echo "<script>
+							alert('Login Failed');
+							window.location='admin';
+						</script>";
+					}
+					
+					
+				}
+				include_once('login.php');
+			break;
+			case '/admin_logout':
+				unset($_SESSION['admin']);
+				echo "<script>
+				alert('Logout Success');
+				window.location='admin';
+				</script>";
+			break;
+            
+            // case '/admin':
+            //     if (isset($_REQUEST['login'])) {
+            //         $admin_email=$_REQUEST['admin_email'];
+            //         $admin_password=md5($_REQUEST['admin_password']); // pass encrypt
+            //         $where = array("admin_email"=>$admin_email,"admin_password"=>$admin_password);
+            //         $res = $this->select_where('admin',$where);
+            //         $ans = $res->num_rows;  // row wise check condtion 
+            //         if ($ans == 1) // 1 means true
+            //         {
+            //            echo "<script>
+            //            alert('Login succes');
+            //            window.location='/Admin_train/index';
+            //            </script>";
+            //         } else {
+            //             echo "<script>
+            //            alert('Login Failed');
+            //            window.location='/admin';
+            //            </script>";
+            //         }
+            //     }
+            //     include_once('login.php');
+            //     break;
 
             case '/index':
                 include_once('index.php');
@@ -98,6 +140,27 @@ class control extends model // 2 step extend model
                 break;
 
             case '/add_employee':
+                if (isset($_REQUEST['submit'])) {
+                    $name = $_REQUEST['name'];
+                    $email = $_REQUEST['email'];
+                    $password=md5($_REQUEST['password']);
+                        $status = $_REQUEST['status'];
+
+
+
+                    $data = array("name" => $name, "email" => $email, "password" => $password, "status" => $status);
+
+                    $res = $this->insert('employee', $data);
+                    if ($res) {
+
+                        echo "<script>
+							alert('Data Add Success');
+							window.location='add_employee';
+						</script>";
+                    }
+                }
+                
+
                 include_once('add_employee.php');
                 break;
 
@@ -105,25 +168,25 @@ class control extends model // 2 step extend model
             case '/add_food':
                 $restaurant_arr = $this->select("restaurant");
                 if (isset($_REQUEST['submit'])) {
+                    $restaurant_id=$_REQUEST['restaurant_id'];
                     $name = $_REQUEST['name'];
                     $description = $_REQUEST['description'];
-                    $image = $_FILES['image']['name'];
                     $price = $_REQUEST['price'];
+                    $image= $_FILES['image']['name'];
 
-
-
-                    $data = array("name" => $name, "description" => $description, "price" => $price, "image" => $image);
+                    $data = array("restaurant_id" => $restaurant_id,"name" => $name, "description" => $description, "price" => $price, "image" => $image);
 
                     $res = $this->insert('food', $data);
                     if ($res) {
-                        $path = "assets/img/food/" . $image;
-                        $tmp_image = $_FILES['image']['tmp_name'];
-                        move_uploaded_file($tmp_image, $path);
+                        // $path = "assets/img/restuarant" . $img;
+                        // $tmp_image = $_FILES['image']['tmp_name'];
+                        // move_uploaded_file($tmp_image, $path);
+
 
                         echo "<script>
-                                                                            alert('Data Add Success');
-                                                                            window.location='add_food';
-                                                                        </script>";
+                        alert('Data Add Success');
+                           window.location='add_food';
+                           </script>";
                     }
                 }
 
@@ -145,7 +208,9 @@ class control extends model // 2 step extend model
 
                     $res = $this->insert('restaurant', $data);
                     if ($res) {
-                        $path = "assets/img/restuarant/" . $image;
+
+                      
+                        $path = "assets/img/restaurant" . $image;
                         $tmp_image = $_FILES['image']['tmp_name'];
                         move_uploaded_file($tmp_image, $path);
 

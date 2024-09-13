@@ -43,7 +43,7 @@ include_once('header.php');
                            Add Food
                         </div>
                         <div class="panel-body">
-                            <form role="form">
+                            <form role="form" method="post" enctype="multipart/form-data">
                                         <!-- <div class="form-group">
                                             <label>food_id</label>
                                             <input class="form-control" type="number" name="food_id">
@@ -57,7 +57,7 @@ include_once('header.php');
 											foreach($restaurant_arr as $w)
 											{
 											?>
-                                                <option value="<?php echo $w->restaurant_id?>"><?php echo $w->restaurant_id?></option>
+                                                <option value="<?php echo $w->restaurant_id?>"><?php echo $w->name?></option>
 											<?php
 											}
 											?>	
@@ -82,8 +82,9 @@ include_once('header.php');
                                         <div class="form-group">
                                             <label>image</label>
                                             <input class="form-control" type="file" name="image">
-                                     <p class="help-block">Enter Food Image here.</p>
+                                            <p class="help-block">Upload File here.</p>
                                         </div>
+                                      
 										
 										
                                         <button type="submit" name="submit"class="btn btn-info">Send Message </button>

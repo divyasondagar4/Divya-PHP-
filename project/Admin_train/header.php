@@ -8,6 +8,20 @@ function active($currect_page){
   }
 ?>
 
+<?php
+if(isset($_SESSION['admin']))
+  {
+   
+  }	  
+  else
+  {
+	  echo "<script>
+			alert('Login First');
+			window.location='admin';
+		</script>";
+  }
+?>
+
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet" />    
  
 <div id="wrapper">
@@ -24,7 +38,12 @@ function active($currect_page){
             <div style="color: black;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Last access :  &nbsp; <a href="login" class="btn btn-danger square-btn-adjust">Logout</a>
+font-size: 16px;"> Last access :  2 week ago &nbsp; <a href="admin" class="btn btn-danger square-btn-adjust">Logout
+    	
+        <?php
+								echo $_SESSION['admin'];
+								?>	
+</a>
             </div>
         </nav>
 
@@ -36,6 +55,11 @@ font-size: 16px;"> Last access :  &nbsp; <a href="login" class="btn btn-danger s
                     </li>
                     <li class="text-center" style="color:black; background-color:white; margin:10px;">
                         <h4>Divya Sondagar </h>
+                        <br>
+							
+                            <?php
+								echo $_SESSION['admin'];
+								?>	
                     </li>
 
                     <li>

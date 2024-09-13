@@ -15,6 +15,15 @@
 
 </head>
 <body style="background-color:white;">
+<?php
+if(isset($_SESSION['admin']))
+  {
+	   echo "<script>
+			window.location='admin';
+		</script>";
+  }	  
+  
+?>
     <div class="container">
         <div class="row text-center " style="padding-top:100px;">
             <div class="col-md-12">
