@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: white; */
+    /* Light blue background */
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+    /* background-color: #ff9900; Orange header */
+    color: #f0f0f0;
+  }
+  
+  .date-join p {
+    color: black;
+    font-size: 20px;
+  }
+  
+  .section {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .label {
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  @media screen and (max-width: 600px) {
+  
+    /* Styles for small screens */
+    header,
+    section {
+      padding: 10px;
+    }
+  }
+  
+  
+  /* body {
+    background: #eee;
+  } */
+  
+  .ratings i {
+    font-size: 16px;
+    color: red
+  }
+  
+  .strike-text {
+    color: red;
+    text-decoration: line-through
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 200px !important;
+  }
+  
+  .dot {
+    height: 7px;
+    width: 7px;
+    margin-left: 9px;
+    margin-right: 6px;
+    margin-top: 3px;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    text-align:left;
+  }
+  .d-flexflex-row
+  {
+    color:black;
+  }
+  span{
+    color:black;
+  }
+  
+  .spec-1 {
+    color: #938787;
+    font-size: 15px
+  }
+  
+  h5 {
+    font-weight: 400
+  }
+  
+  .para {
+    font-size: 16px;
+    color:black;
+  }
+  .main-restaurant h1{
+    color:navy;
+    text-align: left;
+    margin:10px;
+    padding:5px;
+    font-size: 35px;
+    background-color: orange;
+  }
+  .rowp-2bg-whiteborderrounded
+  {
+    margin: 15px!important;
+  }
+  
+
+  /* //food menu */
+
+  .food-menu h1{
+    text-align:center;
+  }
+
+  body {
+    margin: 0;
+    font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .8125rem;
+    font-weight: 400;
+    line-height: 1.5385;
+    color: #333;
+    text-align: left;
+    background-color: #f5f5f5;
+  }
+
+.mt-50{
+    margin-top: 50px;
+    width: 100%;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+    width: 100%;
+}
+.col-md-12
+{
+   
+    display:flex !important;
+}
+
+
+.bg-teal-400 { 
+    background-color: #26a69a;
+}
+
+a{
+    text-decoration: none !important;
+}
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+    width:100% !important;
+}
+.media-body{
+    text-align: center !important;
+}
+.food-menu h4
+{
+    text-align: center;
+    background-color: #484343;
+    color:white;
+    margin: 10px 0px;
+    
+}
+.media-title
+{
+    color:black !important;
+}
+/* .mediaalign-items-centeralign-items-lg-starttext-centertext-lg-leftflex-columnflex-lg-row
+{
+    display:flex;
+} */

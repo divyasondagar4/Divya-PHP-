@@ -38,7 +38,7 @@ if(isset($_SESSION['admin']))
             <div style="color: black;
 padding: 15px 50px 5px 50px;
 float: right;
-font-size: 16px;"> Last access :  2 week ago &nbsp; <a href="admin" class="btn btn-danger square-btn-adjust">Logout
+font-size: 16px;"> Last access :  2 week ago &nbsp; <a href="admin_logout" class="btn btn-danger square-btn-adjust">Logout
     	
         <?php
 								echo $_SESSION['admin'];
