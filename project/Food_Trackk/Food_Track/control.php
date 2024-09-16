@@ -32,6 +32,8 @@ class control extends model
 
                         if($res)
                         {
+
+                        
                             echo "<script>
                             alert('Submit Suceess');
                             window.location='contact';
@@ -45,9 +47,10 @@ class control extends model
                 if(isset($_REQUEST['login']))
 				{
 					$email=$_REQUEST['email'];
+                    $spassword=$_REQUEST['password'];
 					$password=md5($_REQUEST['password']); // pass encrypt
 					
-					$where=array("email"=>$email,"password"=>$password);
+					$where=array("email"=>$email,"password"=>$password,"password"=>$spassword);
 					
 					$res=$this->select_where('customer',$where);
 					$ans=$res->num_rows;  // row wise check condtion 
@@ -56,11 +59,18 @@ class control extends model
                         
 						$fetch=$res->fetch_object();
 						
-						//create_session
-						$_SESSION['user']=$fetch->email;
+						
 						
 						if($fetch->status=="Unblock")
 						{
+                            if(isset($_REQUEST['rem']))
+							{
+								setcookie('un_cookie',$email,time()+15);
+								setcookie('pass_cookie',$spassword,time()+15);
+							}
+                            //create_session
+						$_SESSION['user']=$fetch->email;
+                        
 							echo "<script>
 								alert('Login Success');
 								window.location='index';

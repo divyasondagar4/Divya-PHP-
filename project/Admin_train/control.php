@@ -22,6 +22,7 @@ class control extends model // 2 step extend model
 				if(isset($_REQUEST['login']))
 				{
 					$admin_email=$_REQUEST['admin_email'];
+                    $admin_p=$_REQUEST['admin_password'];
 					$admin_password=md5($_REQUEST['admin_password']); // password encrypt
 					
 					$where=array("admin_email"=>$admin_email,"admin_password"=>$admin_password);
@@ -31,8 +32,14 @@ class control extends model // 2 step extend model
 					if($ans==1) // 1 means true
 					{
 						
+						if(isset($_REQUEST['arem']))
+						{
+							setcookie('admin_email',$admin_email,time()+(24*60*60));
+							setcookie('admin_password',$admin_p,time()+(24*60*60));
+						}
 						$fetch=$res->fetch_object();
 						
+					
 						//create_session
 						$_SESSION['admin']=$fetch->admin_email;
 						echo "<script>

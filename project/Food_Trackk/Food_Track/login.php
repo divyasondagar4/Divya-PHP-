@@ -121,17 +121,18 @@
             <label>
               Email Address<span class="req">*</span>
             </label>
-            <input type="email"required autocomplete="on" name="email">
+            <input type="email" value="<?php if(isset($_COOKIE['un_cookie'])) { echo $_COOKIE['un_cookie']; }?>" required autocomplete="on" name="email">
           </div>
           
           <div class="field-wrap">
             <label>
               Password<span class="req">*</span>
             </label>
-            <input type="password"required autocomplete="on" name="password">
+            <input type="password"  value="<?php if(isset($_COOKIE['pass_cookie'])) { echo $_COOKIE['pass_cookie']; }?>"required autocomplete="on" name="password">
           </div>
-          
+         
           <p class="forgot"><a href="#">Forgot Password?</a></p>
+          <p class="checkbox"><input name="rem" value="rem" type="checkbox" />Remember me</a></p>
           
           <button type="submit" class="button button-block" name="login">Login</button>
           

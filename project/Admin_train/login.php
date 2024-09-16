@@ -39,22 +39,23 @@ if(isset($_SESSION['admin']))
                                     <hr />
                                     <h3 style="text-align:center; color:navy;">Enter Details to Login</h3>
                                        <br />
-                                     <div class="form-group input-group">
+                                       <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
-                                            <input type="text" class="form-control" name="admin_email" placeholder="Your Username " />
+                                            <input value="<?php if(isset($_COOKIE['admin_email'])) { echo $_COOKIE['admin_email']; }?>" type="text" name="admin_email" class="form-control" placeholder="Your Username " />
                                         </div>
                                                                               <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
-                                            <input type="password" class="form-control" name="admin_password"  placeholder="Your Password" />
+                                            <input value="<?php if(isset($_COOKIE['admin_password'])) { echo $_COOKIE['admin_password']; }?>" type="password" name="admin_password" class="form-control"  placeholder="Your Password" />
                                         </div>
-                                    <!-- <div class="form-group">
+                                    <div class="form-group">
                                             <label class="checkbox-inline">
-                                                <input type="checkbox" /> Remember me
+                                                <input name="arem" value="arem" type="checkbox" /> Remember me
                                             </label>
                                             <span class="pull-right">
-                                                   <a href="index.php" >Forget password ? </a> 
+                                                   <a href="index.html" >Forget password ? </a> 
                                             </span>
-                                        </div> -->
+                                        </div>
+                                     
                                      
                                         <button type="submit" name="login" class="btn btn-primary ">Login Now</button>                                    <hr />
                                     <!-- Not register ? <a href="index.php" >click here </a> or go to <a href="index.php">Home</a>  -->
