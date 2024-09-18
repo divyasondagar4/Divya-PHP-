@@ -35,6 +35,10 @@ if(isset($_SESSION['admin']))
                 </button>
                 <a class="navbar-brand" href=""><i class="fa fa-train" aria-hidden="true"></i>   Food-Track</a>
             </div>
+           
+    	
+       
+</a>
             <div style="color: black;
 padding: 15px 50px 5px 50px;
 float: right;
@@ -43,7 +47,7 @@ font-size: 16px;"> Last access :  2 week ago &nbsp; <a href="admin_logout" class
         <?php
 								echo $_SESSION['admin'];
 								?>	
-</a>
+</a><a href="admin_profile" class="btn btn-warning square-btn-adjust " style="margin:0px 10px; ">profile </a>
             </div>
         </nav>
 
@@ -54,9 +58,8 @@ font-size: 16px;"> Last access :  2 week ago &nbsp; <a href="admin_logout" class
                         <img src="assets/img/admin_img.webp" class="user-image img-responsive" />
                     </li>
                     <li class="text-center" style="color:black; background-color:white; margin:10px;">
-                        <h4>Divya Sondagar </h>
-                        <br>
-							
+                        <!-- <h4>Divya Sondagar </h> -->
+                        
                             <?php
 								echo $_SESSION['admin'];
 								?>	

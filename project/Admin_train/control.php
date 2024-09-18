@@ -41,7 +41,8 @@ class control extends model // 2 step extend model
 						
 					
 						//create_session
-						$_SESSION['admin']=$fetch->admin_email;
+                        $_SESSION['admin']=$fetch->admin_email;
+						$_SESSION['admin_id']=$fetch->admin_id;
 						echo "<script>
 							alert('Login Success');
 							window.location='index';
@@ -61,36 +62,26 @@ class control extends model // 2 step extend model
 			break;
 			case '/admin_logout':
 				unset($_SESSION['admin']);
+                unset($_SESSION['admin_id']);
 				echo "<script>
 				alert('Logout Success');
 				window.location='admin';
 				</script>";
 			break;
             
-            // case '/admin':
-            //     if (isset($_REQUEST['login'])) {
-            //         $admin_email=$_REQUEST['admin_email'];
-            //         $admin_password=md5($_REQUEST['admin_password']); // pass encrypt
-            //         $where = array("admin_email"=>$admin_email,"admin_password"=>$admin_password);
-            //         $res = $this->select_where('admin',$where);
-            //         $ans = $res->num_rows;  // row wise check condtion 
-            //         if ($ans == 1) // 1 means true
-            //         {
-            //            echo "<script>
-            //            alert('Login succes');
-            //            window.location='/Admin_train/index';
-            //            </script>";
-            //         } else {
-            //             echo "<script>
-            //            alert('Login Failed');
-            //            window.location='/admin';
-            //            </script>";
-            //         }
-            //     }
-            //     include_once('login.php');
-            //     break;
+         
+            
 
+
+                case '/admin_profile':
+                    $where=array("admin_id"=>$_SESSION['admin']);
+                    $where=array("admin_email"=>$_SESSION['admin']);
+                    $res=$this->select_where('admin',$where);
+                    $fetch=$res->fetch_object();
+                    include_once('admin_profile.php');
+                break;
             case '/index':
+
                 include_once('index.php');
                 break;
 
