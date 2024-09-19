@@ -57,7 +57,15 @@
                 <a href="about" class="nav-item nav-link <?php active("about")?>">About</a>
                 <a href="contact" class="nav-item nav-link <?php active("contact")?>">Contact</a>
             </div>
-           
+            <?php
+			  if(isset($_SESSION['user']))
+			  {
+			  ?>
+                              <a href="user_profile" class="nav-item nav-link <?php active("user_profile")?>">Account</a>
+
+			  <?php
+			  }
+			  ?>
            
             <?php
 		  if(isset($_SESSION['user']))

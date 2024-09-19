@@ -50,7 +50,7 @@ class control extends model
                     $spassword=$_REQUEST['password'];
 					$password=md5($_REQUEST['password']); // pass encrypt
 					
-					$where=array("email"=>$email,"password"=>$password,"password"=>$spassword);
+					$where=array("email"=>$email,"password"=>$password);
 					
 					$res=$this->select_where('customer',$where);
 					$ans=$res->num_rows;  // row wise check condtion 
@@ -61,7 +61,7 @@ class control extends model
 						
 						
 						
-						if($fetch->status=="Unblock")
+						if($fetch->status=="unblock")
 						{
                             if(isset($_REQUEST['rem']))
 							{
@@ -70,7 +70,10 @@ class control extends model
 							}
                             //create_session
 						$_SESSION['user']=$fetch->email;
-                        
+                        //create_session
+							$_SESSION['customer_id']=$fetch->customer_id;
+							// $_SESSION['user']=$fetch->user_name;
+							
 							echo "<script>
 								alert('Login Success');
 								window.location='index';
@@ -97,6 +100,8 @@ class control extends model
 					}	
 				}
 
+              
+
                 if(isset($_REQUEST['signup']))
                 {
                     $name=$_REQUEST['name'];
@@ -120,11 +125,19 @@ class control extends model
             break;
             case '/userlogout':
 				unset($_SESSION['user']);
+                unset($_SESSION['customer_id']);
 				echo "<script>
 				alert('Logout Succes');
 				window.location='login';
 				</script>";
 			break;
+            case '/user_profile':
+                $where=array("customer_id"=>$_SESSION['customer_id']);
+                $res=$this->select_where('customer',$where);
+                $fetch=$res->fetch_object();
+                include_once('user_profile.php');
+            break;
+            
             case '/station':
                 include_once('station.php');
             break;

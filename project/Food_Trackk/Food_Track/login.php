@@ -131,9 +131,9 @@
             <input type="password"  value="<?php if(isset($_COOKIE['pass_cookie'])) { echo $_COOKIE['pass_cookie']; }?>"required autocomplete="on" name="password">
           </div>
          
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
-          <p class="checkbox"><input name="rem" value="rem" type="checkbox" />Remember me</a></p>
           
+          <p class="checkbox" style="display:flex; margin-top:30px; color:orange;"><input name="rem" value="rem" type="checkbox" style="width:10%;  margin-top:5px; color:orange; " />Remember me</p>
+          <p class="forgot"><a href="#">Forgot Password?</a></p>
           <button type="submit" class="button button-block" name="login">Login</button>
           
           </form>
