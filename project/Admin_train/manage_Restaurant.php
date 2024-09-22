@@ -66,15 +66,16 @@
                                             <td><?php echo $data->restaurant_id; ?></td>
                                             <td><?php echo $data->name; ?></td>
                                             <td><?php echo $data->address; ?></td>
-                                           <td><?php echo $data->image;?></td>
+                                         
+                                           <td><a href="<?php echo $data->image;?>"><img src="assets/img/restaurant/<?php echo $data->image?>" width="50px"/></a></td>
                                             <td><?php echo $data->city_id; ?></td>
                                             <td><?php echo $data->Google_Profile; ?></td>
 
 
                                             <td>
-                                                <a href="#" class="btn btn-primary">Edit</a>
-                                                <a href="#" class="btn btn-danger">Delete</a>
-                                                <a href="#" class="btn btn-info">Status</a>
+                                              <a href="edit_restaurant?restaurant_id=<?php echo $data->restaurant_id; ?>" class="btn btn-primary">Edit</a>
+                                                <a href="delete?del_shop=<?php echo $data->restaurant_id; ?>" class="btn btn-danger" > Delete</a>         
+                                                                                       <a href="#" class="btn btn-info">Status</a>
                                             </td>
                                             </tr>
                                         <?php

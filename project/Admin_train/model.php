@@ -50,6 +50,26 @@ function select_where($tbl,$arr)
 	$run=$this->conn->query($sel);  // query run on db
 	return $run;
 }
+// delete from customer where id=1 and status="unblock" 
+	
+function delete_where($tbl,$arr)
+{
+	$column_arr=array_keys($arr);
+	$values_arr=array_values($arr);
+	
+	$del="delete from $tbl where 1=1";  // 1=1 means query contnue
+	$i=0;
+	foreach($arr as $w)
+	{
+		echo $del.=" and $column_arr[$i]='$values_arr[$i]'";
+		$i++;
+	}
+	$run=$this->conn->query($del);  // query run on db
+	return $run;
+}
+
+
+
 
 	
 }

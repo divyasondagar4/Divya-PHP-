@@ -21,7 +21,8 @@
                            <div class="card" style="width:50%">
 							<img class="card-img-top" src="https://www.w3schools.com/bootstrap5/img_avatar1.png" alt="Card image" style="width:30%">
 							<div class="card-body">
-                            <h4 class="card-title">Id : <?php echo $fetch->admin_id?></h4>
+                            <h4 class="card-title">Id : <?php echo $fetch->admin_id
+                            ?></h4>
 							  <h4 class="card-title">Email : <?php echo $fetch->admin_email?></h4>							
                                 <a href="#" class="btn btn-primary">See Profile</a>
 							</div>
