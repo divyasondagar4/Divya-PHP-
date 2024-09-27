@@ -68,10 +68,11 @@
 											foreach($loca_arr as $w)
 											{
 											?>
-                                                <option value="<?php echo $w->city_id?>"><?php echo $w->city_name?></option>
+                                                <option value="<?php echo $w->city_id?>" selected><?php echo $w->city_name ?></option>
 											<?php
 											}
 											?>	
+                                            
                                             </select>
 
                                         <div class="form-group">
@@ -79,7 +80,7 @@
                                             <input class="form-control" type="url" name="Google_Profile" value="<?php echo $fetch->Google_Profile;?>" >
                                             <p class="help-block">Enter URL here.</p>
                                         </div>
-                                        <button type="submit" name="submit"class="btn btn-info">save</button>
+                                        <button type="submit" name="update" class="btn btn-info">save</button>
 
                                     </form>
                             </div>

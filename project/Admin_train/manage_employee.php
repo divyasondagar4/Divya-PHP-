@@ -69,7 +69,7 @@
 
                                            
 											<td>
-												<a href="#" class="btn btn-primary">Edit</a>
+                                            <a href="edit_emp?employee_id=<?php echo $data->employee_id; ?>" class="btn btn-primary" >Edit</a>
                                                 <a href="delete?del_emp=<?php echo $data->employee_id; ?>" class="btn btn-danger" > Delete</a>                       
 												<a href="#" class="btn btn-info">Status</a>
 											</td>

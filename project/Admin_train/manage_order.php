@@ -80,7 +80,7 @@
                                             <td><?php echo $data->cart_id; ?></td>
                                           
                                             <td>
-                                                <a href="#" class="btn btn-primary">Edit</a>
+                                            <a href="edit_order?order_id=<?php echo $data->order_id; ?>" class="btn btn-primary">Edit</a>
                                                 <a href="delete?del_order=<?php echo $data->order_id; ?>" class="btn btn-danger" > Delete</a>  
                                                 <a href="#" class="btn btn-info">Status</a>
                                             </td>

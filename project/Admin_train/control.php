@@ -177,9 +177,9 @@ class control extends model // 2 step extend model
     
                         $res = $this->insert('food', $data);
                         if ($res) {
-                            // $path = "assets/img/restuarant" . $img;
-                            // $tmp_image = $_FILES['image']['tmp_name'];
-                            // move_uploaded_file($tmp_image, $path);
+                            $path = "assets/img/food/" . $image;
+                            $tmp_image = $_FILES['image']['tmp_name'];
+                            move_uploaded_file($tmp_image, $path);
     
     
                             echo "<script>
@@ -384,9 +384,161 @@ case '/edit_restaurant':
         $where=array("restaurant_id"=>$restaurant_id);
         $res=$this->select_where('restaurant',$where);
         $fetch=$res->fetch_object();
+        $old_img=$fetch->image;
+        
+        if(isset($_REQUEST['update']))
+        {
+            
+           
+                $name = $_REQUEST['name'];
+                $address = $_REQUEST['address'];
+                $image = $_FILES['image']['name'];
+                $city_id = $_REQUEST['city_id'];
+                $Google_Profile = $_REQUEST['Google_Profile'];
+
+
+
+                $data = array("name" => $name, "address" => $address, "image" => $image, "city_id" => $city_id, "Google_Profile" => $Google_Profile);
+
+                $res=$this->update('restaurant',$data,$where);
+                if($_FILES['image']['name']>0)
+                {
+                    $image=$_FILES['image']['name'];
+                    $path="assets/img/restaurants".$image;
+                    $tmp_img=$_FILES['image']['tmp_name'];
+                    move_uploaded_file($tmp_img,$path);
+                
+                    $data=array("name"=>$name,"city_id"=>$city_id,"address"=>$address,"Google_Profile"=>$Google_Profile,"image"=>$image);
+                    $res=$this->update('restaurant',$data,$where);
+                    if($res)
+                    {					
+                       unlink('assets/img/restuarant'.$old_img);
+                        echo "<script>
+                            alert('Data Update Success');
+                            window.location='manage_Restaurant';
+                        </script>";
+                    }
+                    
+                }
+                else
+                {
+                    $data=array("name"=>$name,"city_id"=>$city_id,"address"=>$address,"Google_Profile" => $Google_Profile);
+                    $res=$this->update('restaurant',$data,$where);
+                    if($res)
+                    {					
+                        echo "<script>
+                          alert ('Data Update Success');
+                            window.location='manage_Restaurant';
+                        </script>";
+                    }
+                }
+        
+        
+    }
+
     }
   
     include_once('edit_restaurant.php');
+break;
+
+
+case '/edit_emp':
+    if(isset($_REQUEST['employee_id']))
+    {
+        $employee_id=$_REQUEST['employee_id'];
+        $where=array("employee_id"=>$employee_id);
+        $res=$this->select_where('employee',$where);
+        $fetch=$res->fetch_object();
+
+        if(isset($_REQUEST['update']))
+        {
+            $name=$_REQUEST['name'];
+          
+            $email=$_REQUEST['email'];
+            $data=array("name"=>$name,"email"=>$email);
+            $res=$this->update('employee',$data,$where);
+           
+        
+        
+                if($res)
+                {					
+                    echo "<script>
+                  alert ('Update Success');
+                        window.location='manage_employee';
+                    </script>";
+                }
+            
+        }
+    }
+
+    include_once('edit_emp.php');
+break;
+
+
+case '/edit_food':
+    $loca_arr=$this->select("city");
+    $restaurant_arr=$this->select("restaurant");
+
+    if(isset($_REQUEST['food_id']))
+    {
+        $food_id=$_REQUEST['food_id'];
+       
+        $where=array("food_id"=>$food_id);
+        $res=$this->select_where('food',$where);
+        $fetch=$res->fetch_object();
+    }
+    $old_img=$fetch->image;
+        
+        if(isset($_REQUEST['update']))
+        {
+        
+                $restaurant_id = $_REQUEST['restaurant_id'];
+                $name = $_REQUEST['name'];
+                $description = $_REQUEST['description'];
+                $price = $_REQUEST['price'];
+                $image = $_FILES['image']['name'];
+        
+                $data = array("restaurant_id" => $restaurant_id, "name" => $name, "description" => $description, "price" => $price, "image" => $image);
+        
+                $res=$this->update('food',$data,$where);
+                if($_FILES['image']['name']>0)
+                {
+                    $image=$_FILES['image']['name'];
+                    $path="assets/img/food/".$image;
+                    $tmp_img=$_FILES['image']['tmp_name'];
+                    move_uploaded_file($tmp_img,$path);
+
+                    $data = array("restaurant_id" => $restaurant_id, "name" => $name, "description" => $description, "price" => $price, "image" => $image);
+
+                    $res=$this->update('food',$data,$where);
+                    if($res)
+                    {					
+                       unlink('assets/img/food'.$old_img);
+                        echo "<script>
+                            alert('Data Update Success');
+                            window.location='manage_food';
+                        </script>";
+                    }
+                    
+                }
+                else
+                {
+                    $data=array("name"=>$name,"city_id"=>$city_id,"address"=>$address,"Google_Profile" => $Google_Profile);
+                    $res=$this->update('food',$data,$where);
+                    if($res)
+                    {					
+                        echo "<script>
+                           alert('Data Update Success');
+                            window.location='manage_food';
+                        </script>";
+                    }
+                }
+        
+        
+    }
+   
+    
+    include_once('edit_food.php');
 break;
 //-----------------------------------------------------edit end-------------------------------------------------------
 

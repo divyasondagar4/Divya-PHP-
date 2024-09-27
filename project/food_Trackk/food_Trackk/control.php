@@ -61,7 +61,7 @@ class control extends model
 						
 						
 						
-						if($fetch->status=="unblock")
+						if($fetch->status=="unblocked")
 						{
                             if(isset($_REQUEST['rem']))
 							{
@@ -138,6 +138,39 @@ class control extends model
                 include_once('user_profile.php');
             break;
             
+            case '/userprofile_edit':
+				if(isset($_REQUEST['user_id']))
+				{
+					$customer_id=$_REQUEST['user_id'];
+					$where=array("customer_id"=>$customer_id);
+					$res=$this->select_where('customer',$where);
+					$fetch=$res->fetch_object();
+
+                    if(isset($_REQUEST['update']))
+					{
+                        $name=$_REQUEST['name'];
+                        $contact_number=$_REQUEST['contact_number'];
+                        $email=$_REQUEST['email'];
+                        $data=array("name"=>$name,"contact_number"=>$contact_number,"email"=>$email);
+                        $res=$this->update('customer',$data,$where);
+                       
+                    
+                    
+							if($res)
+							{					
+								echo "<script>
+						      alert ('Update Success');
+									window.location='user_profile';
+								</script>";
+							}
+						
+					}
+                }
+	
+				include_once('userprofile_edit.php');
+			break;
+			
+			
             case '/station':
                 include_once('station.php');
             break;

@@ -73,7 +73,7 @@
 
 
                                             <td>
-                                              <a href="edit_restaurant?restaurant_id=<?php echo $data->restaurant_id; ?>" class="btn btn-primary">Edit</a>
+                                              <a href="edit_restaurant?restaurant_id=<?php echo $data->restaurant_id; ?>" class="btn btn-primary" >Edit</a>
                                                 <a href="delete?del_shop=<?php echo $data->restaurant_id; ?>" class="btn btn-danger" > Delete</a>         
                                                                                        <a href="#" class="btn btn-info">Status</a>
                                             </td>

@@ -101,10 +101,10 @@
                <div class="container">
                   <div class="row">
                     
-					<div class="col-md-6">
-                        <div class="blog_img"><img src="<?php echo $fetch->img?>" height="300px" width="100%"></div>
+					<!-- <div class="col-md-6">
+                        <div class="blog_img"><img src=" <?php echo $fetch->img?>" height="300px" width="100%"></div>
                      </div>
-                    
+                     -->
 					<div class="col-md-6">
                         <div class="blog_taital_main">
 						   <h1 class="blog_text">customer ID :<?php echo $fetch->customer_id?></h1>
@@ -112,7 +112,7 @@
                            <p class="lorem_text">Email : <?php echo $fetch->email?></p>
 						   <p class="lorem_text">contact_number : <?php echo $fetch->contact_number?></p>
 						   <p class="lorem_text">status : <?php echo $fetch->status?></p>
-                           <div class="readmore_btn"><a href="">Edit Profile</a></div>
+                           <div class="readmore_btn"><a href="userprofile_edit?user_id=<?php echo $fetch->customer_id?>">Edit Profile</a></div>
                         </div>
                     </div>
 					
