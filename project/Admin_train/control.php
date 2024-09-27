@@ -404,7 +404,7 @@ case '/edit_restaurant':
                 if($_FILES['image']['name']>0)
                 {
                     $image=$_FILES['image']['name'];
-                    $path="assets/img/restaurants".$image;
+                    $path="assets/img/restaurant/".$image;
                     $tmp_img=$_FILES['image']['tmp_name'];
                     move_uploaded_file($tmp_img,$path);
                 
