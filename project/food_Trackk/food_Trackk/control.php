@@ -51,7 +51,9 @@ class control extends model
 					$password=md5($_REQUEST['password']); // pass encrypt
 					
 					$where=array("email"=>$email,"password"=>$password);
-					
+
+
+                    
 					$res=$this->select_where('customer',$where);
 					$ans=$res->num_rows;  // row wise check condtion 
 					if($ans==1) // 1 means true
@@ -65,8 +67,8 @@ class control extends model
 						{
                             if(isset($_REQUEST['rem']))
 							{
-								setcookie('un_cookie',$email,time()+15);
-								setcookie('pass_cookie',$spassword,time()+15);
+								setcookie('un_cookie',$email,time()+(24*60*60));
+								setcookie('pass_cookie',$spassword,time()+(24*60*60));
 							}
                             //create_session
 						$_SESSION['user']=$fetch->email;
@@ -186,6 +188,44 @@ class control extends model
             case '/about':
                 include_once('about.php');
             break;
+
+
+
+            //-----------------------------------login Api------------------------------------------------
+            case '/login_api':	
+				$data_arr = json_decode(file_get_contents("php://input"), true);
+				
+				
+                $email=$data_arr['email'];
+                $spassword=$data_arr['password'];
+                $password=md5($data_arr['password']); // pass encrypt
+                
+            
+				
+				$where=array("email"=>$email,"password"=>$password);
+				
+				$res=$this->select_where('customer',$where);
+				
+				$fetch=$res->fetch_object();
+				
+				$chk=$res->num_rows;
+				if($chk==1)
+				{	
+					if($fetch->status=="Unblocked")
+					{
+						echo json_encode(array("message" => "Login Successfully", "status" => true));	
+					}
+					else
+					{
+						echo json_encode(array("message" => "Login Failed due Blocked Account", "status" => false));	
+					}
+				}
+				else
+				{	
+					echo json_encode(array("message" => "Login Failed due to wrong credencial", "status" => false));	
+				}
+			break;
+			
         }
     }
 }

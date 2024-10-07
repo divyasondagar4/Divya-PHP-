@@ -118,17 +118,19 @@
           <form action="" method="post">
           
             <div class="field-wrap">
+          
+            <input type="email" value="<?php if(isset($_COOKIE['un_cookie'])) { echo $_COOKIE['un_cookie']; }?>" required autocomplete="on" name="email">
             <label>
               Email Address<span class="req">*</span>
             </label>
-            <input type="email" value="<?php if(isset($_COOKIE['un_cookie'])) { echo $_COOKIE['un_cookie']; }?>" required autocomplete="on" name="email">
           </div>
           
           <div class="field-wrap">
+           
+            <input type="password"  value="<?php if(isset($_COOKIE['pass_cookie'])) { echo $_COOKIE['pass_cookie']; }?>"required autocomplete="on" name="password">
             <label>
               Password<span class="req">*</span>
             </label>
-            <input type="password"  value="<?php if(isset($_COOKIE['pass_cookie'])) { echo $_COOKIE['pass_cookie']; }?>"required autocomplete="on" name="password">
           </div>
          
           

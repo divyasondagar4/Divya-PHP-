@@ -101,10 +101,10 @@
                <div class="container">
                   <div class="row">
                     
-					<!-- <div class="col-md-6">
+					<div class="col-md-6">
                         <div class="blog_img"><img src=" <?php echo $fetch->img?>" height="300px" width="100%"></div>
                      </div>
-                     -->
+                    
 					<div class="col-md-6">
                         <div class="blog_taital_main">
 						   <h1 class="blog_text">customer ID :<?php echo $fetch->customer_id?></h1>
